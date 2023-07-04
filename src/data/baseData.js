@@ -1,8 +1,8 @@
 const data = [
     {   
-        rating: {
-            rate: '18',
-            rating: '18',
+        episodes: {
+            episode: '18',
+            episodes: '18',
         },
         coment: '11',
         view: '9141',
@@ -12,9 +12,9 @@ const data = [
     },
 
     {
-        rating: {
-            rate: '18',
-            rating: '18',
+        episodes: {
+            episode: '18',
+            episodes: '18',
         },
         coment: '11',
         view: '9141',
@@ -23,9 +23,9 @@ const data = [
         img: ''
     },
     {
-        rating: {
-                rate: '18',
-                rating: '18',
+        episodes: {
+                episode: '18',
+                episodes: '18',
         },
         coment: '11',
         view: '9141',
@@ -35,9 +35,9 @@ const data = [
     },
     
     {
-        rating: {
-            rate: '18',
-            rating: '18',
+        episodes: {
+            episode: '18',
+            episodes: '18',
         },
         coment: '11',
         view: '9141',
@@ -46,9 +46,9 @@ const data = [
         mg: ''
     },
     {
-        rating: {
-            rate: '18',
-            rating: '18',
+        episodes: {
+            episode: '18',
+            episodes: '18',
         },
         title: '',
         coment: '11',
@@ -57,9 +57,9 @@ const data = [
         img: ''
     },
     {
-        rating: {
-            rate: '18',
-            rating: '18',
+        episodes: {
+            episode: '18',
+            episodes: '18',
         },
         coment: '11',
         view: '9141',
