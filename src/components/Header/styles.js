@@ -4,6 +4,14 @@ export const HeaderContainer = styled.header`
     background: #070720;
     font-size: 15px;
     font-weight: 700;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    div{
+        width: 90%;
+        max-width: 1140px;
+        margin: auto;
+    }
     nav{
         height: 60px;
         width: 90%;

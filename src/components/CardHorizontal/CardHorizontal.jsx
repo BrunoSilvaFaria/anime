@@ -1,57 +1,31 @@
-import { CardHorizontal } from "./styles";
-import img from '../assets/popular/popular-1.jpg';
-export default function Header() {
+import React from 'react';
+import { Card } from "./styles";
+export default function CardHorizontal(props) {
   return (
-    <CardHorizontal>
-      <header>
-        <h4>Top Views</h4>
-        <div>
-          <ul className="display">
-            <li>
-              <a href="" className="link-active">Day</a>
-            </li>
-            
-            <li>
-              <a href="">Week</a>
-            </li>
-
-            <li>
-              <a href="">Month</a>
-            </li>
-
-            <li>
-              <a href="">Years</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-
-      <section className="conteiner">
+    <Card>
         <article>
-          <section className="background"
-          style = {{backgroundImage: `url(${img})`}}>
+        <section className="background"
+          style = {{ backgroundImage: `url('${props.item.img}')` }}>
             <div className="alinhamento">
               <div className="display">
                 <div className="card card--rage rage">
                   <div>
-                    <span>18</span>
+                  <span>{props.item.episodes.episode}</span>
                     <span className="dash">/</span>
-                    <span>18</span>
+                    <span>?</span>
                   </div>
                 </div>
                   <div className="card view">
                     <div>
                       <span>V</span>
-                      <span>94211</span>
+                      <span>{props.item.view}</span>
                     </div>
                   </div>
               </div>
-              <a href="#">Boruto: Naruto next generations</a>
+              <a href="#">{props.item.title}</a>
             </div>
           </section>
         </article>
-      </section>
-
-    </CardHorizontal>
+    </Card>
   );
 }

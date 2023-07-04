@@ -1,8 +1,8 @@
-import { Footer } from "./styles";
-import logo from "../assets/logo.png";
+import { FooterConteiner } from "./styles";
+import logo from "../logo.png";
 export default function Header() {
   return (
-    <Footer>
+    <FooterConteiner>
         <footer>
           <div className="footer">
             <img src={logo} alt="Logo do site" />
@@ -27,6 +27,6 @@ export default function Header() {
             </p>
           </div>
         </footer>
-      </Footer>
+      </FooterConteiner>
   );
 }

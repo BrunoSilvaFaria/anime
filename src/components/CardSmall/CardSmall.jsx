@@ -1,29 +1,23 @@
 import { CardSmall } from "./styles";
-import logo from "../assets/logo.png";
-export default function Header() {
+export default function Header(props) {
   return (
     <CardSmall>
-      <header>
-        <h4>New Comment</h4>
-      </header>
-
-      <section className="conteiner">
         <article>
-          <div className="background"></div>
+        <div className="background"
+        style = {{ backgroundImage: `url('${props.item.img}')` }}></div>
           <div className="alinhamento">
             <div className="label">
-              <span className="status">Active</span>
-              <span className="categorie">Active</span>
+            <span className="status">{props.item.label[0]}</span>
+            <span className="categorie">{props.item.label[1]}</span>
             </div>
-            <a href="#">The Seven Deadly Sins: Wrath of the Gods</a>
+            <a href="#">{props.item.title}</a>
             <div className="view">
               <span>V</span>
-              <span>94211</span>
+              <span>{props.item.view}</span>
               <span>Viewes</span>
             </div>
           </div>
         </article>
-      </section>
 
     </CardSmall>
   );

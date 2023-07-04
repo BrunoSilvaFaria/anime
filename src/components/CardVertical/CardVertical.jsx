@@ -1,38 +1,30 @@
-import { CardVertical } from "./styles";
-import logo from "../assets/logo.png";
-export default function Header() {
+import React from 'react';
+import { Card } from "./styles";
+export default function CardVertical(props) {
   return (
-    <CardVertical>
-      <header>
-        <h3>Card vertical</h3>
-        <div>
-          <a href="#">View all</a>
-          <span>--</span>
-        </div>
-      </header>
-
-      <section className="conteiner">
+    <Card>
         <article>
-          <section className="background">
+          <section className="background"
+          style = {{ backgroundImage: `url('${props.item.img}')` }}>
             <div className="alinhamento">
               <div className="card card--rage rage">
                 <div>
-                  <span>18</span>
+                  <span>{props.item.episodes.episode}</span>
                   <span className="dash">/</span>
-                  <span>18</span>
+                  <span>{props.item.episodes.episodes}</span>
                 </div>
               </div>
               <div className="display">
                 <div className="card coments">
                   <div>
                     <span>C</span>
-                    <span>11</span>
+                    <span>{props.item.coment}</span>
                   </div>
                 </div>
                 <div className="card view">
                   <div>
                     <span>V</span>
-                    <span>94211</span>
+                    <span>{props.item.view}</span>
                   </div>
                 </div>
               </div>
@@ -40,14 +32,12 @@ export default function Header() {
           </section>
           <div>
             <div className="label">
-              <span className="status">Active</span>
-              <span className="categorie">Active</span>
+              <span className="status">{props.item.label[0]}</span>
+            <span className="categorie">{props.item.label[1]}</span>
             </div>
           </div>
-          <a href="#">The Seven Deadly Sins: Wrath of the Gods</a>
+          <a href="#">{props.item.title}</a>
         </article>
-      </section>
-
-    </CardVertical>
+    </Card>
   );
 }

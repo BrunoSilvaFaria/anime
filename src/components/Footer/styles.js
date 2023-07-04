@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const Footer= styled.header`
+export const FooterConteiner= styled.header`
     height: 190px;
     background: #070720;
     font-size: 15px;
@@ -7,7 +7,9 @@ export const Footer= styled.header`
     margin-top: 50px;
 
     footer{
-        display: inline-block;
+        width: 90%;
+        max-width: 1140px;
+        margin: auto;
         margin-top: 50px;
     }
     .footer,
@@ -18,7 +20,6 @@ export const Footer= styled.header`
     }
 
     .footer{
-        width: 90%;
         margin: auto;
         align-items: self-start;
     }
