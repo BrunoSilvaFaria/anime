@@ -1,30 +1,37 @@
 import React from 'react';
+
 import { Card } from "./styles";
+import { CardConteiner } from "../Components/Componente/styles";
+import { TitleAnime } from "../Components/Componente/styles";
+import { Background } from "../Components/Componente/styles";
+import { AlinhamentoCards } from "../Components/Componente/styles";
+import { DisplayCards } from "../Components/Componente/styles";
+
 export default function CardHorizontal(props) {
   return (
     <Card>
         <article>
-        <section className="background"
+        <Background className="background"
           style = {{ backgroundImage: `url('${props.item.img}')` }}>
-            <div className="alinhamento">
-              <div className="display">
-                <div className="card card--rage rage">
-                  <div>
-                  <span>{props.item.episodes.episode}</span>
+            <AlinhamentoCards className="alinhamento">
+              <DisplayCards className="display">
+                <CardConteiner>
+                  <div className="backgroundCard episodes">
+                    <span>{props.item.episodes.episode}</span>
                     <span className="dash">/</span>
                     <span>?</span>
                   </div>
-                </div>
-                  <div className="card view">
-                    <div>
-                      <span>V</span>
-                      <span>{props.item.view}</span>
+                </CardConteiner>
+                  <CardConteiner>
+                    <div className="backgroundCard">
+                        <span className='icon'>V</span>
+                        <span>{props.item.view}</span>
                     </div>
-                  </div>
-              </div>
-              <a href="#">{props.item.title}</a>
-            </div>
-          </section>
+                  </CardConteiner>
+              </DisplayCards>
+              <TitleAnime href="#">{props.item.title}</TitleAnime>
+            </AlinhamentoCards>
+          </Background>
         </article>
     </Card>
   );

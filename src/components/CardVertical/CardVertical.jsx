@@ -1,42 +1,50 @@
 import React from 'react';
 import { Card } from "./styles";
+import { LabelConteiner } from "../Components/Componente/styles";
+import { CardConteiner } from "../Components/Componente/styles";
+import { TitleAnime } from "../Components/Componente/styles";
+import { Background } from "../Components/Componente/styles";
+import { AlinhamentoCards } from "../Components/Componente/styles";
+import { DisplayCards } from "../Components/Componente/styles";
+
 export default function CardVertical(props) {
   return (
     <Card>
         <article>
-          <section className="background"
+          <Background className="background background--vertical"
           style = {{ backgroundImage: `url('${props.item.img}')` }}>
-            <div className="alinhamento">
-              <div className="card card--rage rage">
-                <div>
-                  <span>{props.item.episodes.episode}</span>
-                  <span className="dash">/</span>
-                  <span>{props.item.episodes.episodes}</span>
+            <AlinhamentoCards className="alinhamento">
+              <CardConteiner>
+                <div className="backgroundCard episodes">
+                    <span>{props.item.episodes.episode}</span>
+                    <span className="dash">/</span>
+                    <span>{props.item.episodes.episodes}</span>
                 </div>
-              </div>
-              <div className="display">
-                <div className="card coments">
-                  <div>
-                    <span>C</span>
-                    <span>{props.item.coment}</span>
+              </CardConteiner>
+            <DisplayCards className="display">
+              <CardConteiner>
+                  <div className="backgroundCard">
+                      <span className='icon'>C</span>
+                      <span>{props.item.coment}</span>
                   </div>
-                </div>
-                <div className="card view">
-                  <div>
-                    <span>V</span>
+              </CardConteiner>
+                
+              <CardConteiner>
+                <div className="backgroundCard">
+                    <span className="icon">V</span>
                     <span>{props.item.view}</span>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <div>
-            <div className="label">
-              <span className="status">{props.item.label[0]}</span>
-            <span className="categorie">{props.item.label[1]}</span>
-            </div>
+              </CardConteiner>
+            </DisplayCards>
+          </AlinhamentoCards>
+        </Background>
+        <LabelConteiner>
+                <div className="label">
+                <span className="status">{props.item.label[0]}</span>
+                <span className="categorie">{props.item.label[1]}</span>
           </div>
-          <a href="#">{props.item.title}</a>
+        </LabelConteiner> 
+          <TitleAnime href="#">{props.item.title}</TitleAnime>
         </article>
     </Card>
   );

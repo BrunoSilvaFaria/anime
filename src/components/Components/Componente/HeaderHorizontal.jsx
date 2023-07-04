@@ -1,19 +1,19 @@
 import React from 'react';
-import { HeaderConteiner } from "./styles";
+import { HeaderMedium } from "./styles";
+import { HeaderSubtitle } from "./styles";
+import { DisplayFlex } from "./styles";
 export default function HeaderHorizontal(props) {
     return (
-            <HeaderConteiner>
-                <header>
-                <h4>{props.title}</h4>
+            <HeaderMedium>
+                <HeaderSubtitle>{props.title}</HeaderSubtitle>
                 <nav>
-                    <ul>
+                    <DisplayFlex>
                         <li><a href="#">Day</a></li>
                         <li><a href="#">Week</a></li>
                         <li><a href="#">Month</a></li>
                         <li><a href="#">Years</a></li>
-                    </ul>
+                    </DisplayFlex>
                 </nav>
-                </header>
-            </HeaderConteiner>
+            </HeaderMedium>
     )
 }

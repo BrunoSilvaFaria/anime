@@ -1,15 +1,16 @@
 import React from 'react';
-import { HeaderConteiner } from "./styles";
+import { HeaderTitle} from "./styles";
+import { HeaderLarge} from "./styles";
 export default function HeaderVertical(props) {
     return (
         <div>
-            <HeaderConteiner>
-                <h3>{props.title}</h3>
+            <HeaderLarge>
+                <HeaderTitle>{props.title}</HeaderTitle>
                 <div>
                     <a href="#">View All</a>
                     <span>--</span>
                 </div>
-            </HeaderConteiner>
+            </HeaderLarge>
         </div>
     )
 }
