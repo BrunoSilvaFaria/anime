@@ -1,16 +1,12 @@
 import Header from './components/Header/Header';
-import CardVertical from './components/CardVertical/CardVertical';
-import CardHorizontal from './components/CardHorizontal/CardHorizontal';
-import CardSmall from './components/CardSmall/CardSmall';
+import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import './global.css';
 function App() {
   return (
     <>
       <Header />
-      <CardVertical />
-      <CardHorizontal />
-      <CardSmall />
+      <Home />
       <Footer />
     </>
   )
