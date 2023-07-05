@@ -4,6 +4,22 @@ export const DisplayFlex = styled.div`
     display: flex;
     justify-content: space-between;   
 `
+
+// === Button ===
+export const Button = styled.button`
+    border-radius: 4px;
+    background: #e53637;
+    padding: 15px 20px;
+    margin-right: 11px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    span{
+        font-size: 14px;
+    }
+`
 // === Cards ===
 export const LabelConteiner = styled.div`
         margin-bottom: 15px;
