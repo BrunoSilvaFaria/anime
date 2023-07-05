@@ -14,7 +14,7 @@ export default function CardVertical(props) {
           <Background className="background background--vertical"
           style = {{ backgroundImage: `url('${props.item.img}')` }}>
             <AlinhamentoCards className="alinhamento">
-              <CardConteiner>
+            <CardConteiner>
                 <div className="backgroundCard episodes">
                     <span>{props.item.episodes.episode}</span>
                     <span className="dash">/</span>
