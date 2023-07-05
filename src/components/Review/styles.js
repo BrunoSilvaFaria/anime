@@ -27,14 +27,19 @@ export const Review = styled(DisplayFlex)`
     }
     header{
         margin-bottom: 10px;
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
         a{
             color: #ffffff;
             font-weight: 700;
             margin-bottom: 10px;
         }
         span{
+            font-size: 16px;
             color: #b7b7b7;
             font-weight: 400;
+            margin-left: 5px;
         }
     }
     p{
