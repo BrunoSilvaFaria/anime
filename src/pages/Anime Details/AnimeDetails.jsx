@@ -7,7 +7,7 @@ import { DisplayCards } from "../../components/Components/Componente/styles.js";
 import { CardConteiner } from "../../components/Components/Componente/styles.js";
 
 import { AnimeInfo } from "./styles";
-import { Button } from "./styles";
+import { Button } from "../../components/Components/Componente/styles.js";
 import { CardDetails } from "./styles";
 import { DetailsConteiner } from "./styles";
 export default function AnimeDetails() {

@@ -1,19 +1,6 @@
 import styled from "styled-components";
-import {Card} from "../../components/CardVertical/styles";
-export const Button = styled.button`
-    border-radius: 4px;
-    background: #e53637;
-    padding: 15px 20px;
-    margin-right: 11px;
-    margin-bottom: 60px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    span{
-        font-size: 14px;
-    }
-`
+import { Card } from "../../components/CardVertical/styles";
+
 export const CardDetails = styled(Card)`
     width: 210px;
     height: 440px;
