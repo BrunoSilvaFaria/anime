@@ -4,6 +4,32 @@ export const DisplayFlex = styled.div`
     display: flex;
     justify-content: space-between;   
 `
+// === Input / Form ===
+export const InputConteiner = styled.div`
+    background: #fff;
+    width: 370px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    span{
+        padding: 0 15px;
+        color: #b7b7b7;
+        font-size: 20px;
+    }
+`
+export const Input = styled.input`
+    border-left: 1px solid #b7b7b7;
+    padding-left: 20px;
+    color: #b7b7b7;
+    font-size: 15px;
+    height: 30px;
+`
+export const FormHeader = styled.h2`
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Oswald';
+        margin-bottom: 30px;
+        padding-top: 40px;
+`
 
 // === Button ===
 export const Button = styled.button`
@@ -12,6 +38,7 @@ export const Button = styled.button`
     padding: 15px 20px;
     margin-right: 11px;
     margin-bottom: 60px;
+    margin: 0 0 60px 11px;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
@@ -19,6 +46,43 @@ export const Button = styled.button`
     span{
         font-size: 14px;
     }
+`
+export const ButtonLogin = styled(Button)`
+    border-radius: 0;
+    padding: 12px 30px;
+    margin: 10px 0 40px 0;
+`
+
+export const ButtonRegister = styled.a`
+    background: #e53637;
+    padding: 12px 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+`
+
+export const ButtonSocial = styled(ButtonLogin)`
+    border-radius: 0;
+    padding: 10px;
+    width: 380px;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+        span{
+        font-size: 20px;
+        margin: 0 40px 0 20px;
+    }
+`
+export const ButtonFace = styled(ButtonSocial)`
+    background: #4267b2;
+`
+export const ButtonGoogle = styled(ButtonSocial)`
+    background: #ff4343;
+`
+export const ButtonTwitter = styled(ButtonSocial)`
+    background: #1da1f2;
 `
 // === Cards ===
 export const LabelConteiner = styled.div`
