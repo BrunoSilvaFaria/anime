@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/generator": "^7.22.5",
     "@storybook/addon-essentials": "^7.0.24",
     "@storybook/addon-interactions": "^7.0.24",
     "@storybook/addon-links": "^7.0.24",
@@ -51,6 +52,7 @@
     "commit-msg-linter": "^1.0.0",
     "eslint-plugin-storybook": "^0.6.12",
     "prop-types": "^15.8.1",
+    "regenerate": "^1.4.2",
     "storybook": "^7.0.24",
     "styled-components": "^6.0.1",
     "webpack": "^5.88.1"
