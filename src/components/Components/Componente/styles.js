@@ -84,6 +84,28 @@ export const ButtonGoogle = styled(ButtonSocial)`
 export const ButtonTwitter = styled(ButtonSocial)`
     background: #1da1f2;
 `
+
+// === Link ===
+export const LinkSocial = styled.a`
+    border-radius: 2px;
+    padding: 18px 30px;
+    margin-top: 30px;
+    font-size: 15px;
+    display: inline-block;
+`
+
+export const LinkFace = styled(LinkSocial)`
+    background: #4267b2;
+`
+export const LinkPinterest= styled(LinkSocial)`
+    background: #ca2027;
+`
+export const LinkLinkedlin= styled(LinkSocial)`
+    background: #0372b1;
+`
+export const LinkTwitter = styled(LinkSocial)`
+    background: #1da1f2;
+`
 // === Cards ===
 export const LabelConteiner = styled.div`
         margin-bottom: 15px;
