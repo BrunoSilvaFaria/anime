@@ -6,6 +6,12 @@ export const HeaderEpisodes = styled(HeaderTitle)`
     margin-bottom: 20px;
     margin-top: 45px;
 `
+export const Conteiner = styled.section`
+    margin: auto;
+    width: 90%;
+    max-width: 930px;
+    margin: 70px auto;
+`
 export const Episodes = styled.section`
     width: 930px;
     margin: auto;

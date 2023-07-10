@@ -1,10 +1,10 @@
 import React from "react";
-import AnimeDetails from "../Anime Details/AnimeDetails";
-import { HeaderEpisodes, Episodes } from './styles.js';
+import AnimeCard from "../AnimeCard/AnimeCard";
+import { HeaderEpisodes, Episodes, Conteiner } from './styles.js';
 export default function AnimeEpisodes() {
   return (
-      <>
-      <AnimeDetails />
+      <Conteiner>
+      <AnimeCard />
 
       <Episodes>
         <HeaderEpisodes> List Episodes</HeaderEpisodes>
@@ -73,7 +73,7 @@ export default function AnimeEpisodes() {
           </ul>
         </nav>
       </Episodes>
-      </>
+      </Conteiner>
     
     );
   }

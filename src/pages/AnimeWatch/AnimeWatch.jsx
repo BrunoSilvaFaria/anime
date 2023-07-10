@@ -1,6 +1,6 @@
 import React from "react";
 import Reviews from '../../components/Review/Reviews';
-
+import { Link } from "react-router-dom";
 import { WatchConteiner, VideoConteiner, Episodes, Comment, HeaderComment } from "./styles";
 export default function AnimeWatch() {
   return (
@@ -9,7 +9,7 @@ export default function AnimeWatch() {
         <video src="/assets/videos/1.mp4" poster="/assets/videos/anime-watch.jpg" controls></video>
         <Episodes>
           <a href="">Episódio anterior</a>
-          <a href="">Lista de episodios</a>
+          <Link to='/animeEpisodes'><a href="">Lista de episodios</a></Link>
           <a href="">Próximo episodio</a>
         </Episodes>
       </VideoConteiner>
