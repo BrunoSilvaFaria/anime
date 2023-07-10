@@ -1,7 +1,5 @@
 import React from "react";
-import Reviews from '../../components/Review/Reviews';
 import { Link } from "react-router-dom";
-import dataAnime from "../../data/dataAnime";
 import { Background } from "../../components/Components/Componente/styles.js";
 import { AlinhamentoCards } from "../../components/Components/Componente/styles.js";
 import { DisplayCards } from "../../components/Components/Componente/styles.js";
@@ -11,7 +9,6 @@ import { AnimeInfo } from "./styles";
 import { Button } from "../../components/Components/Componente/styles.js";
 import { CardDetails } from "./styles";
 import { DetailsConteiner } from "./styles";
-import { ReviewConteiner } from "./styles";
 export default function AnimeCard() {
   return (
           <DetailsConteiner>
