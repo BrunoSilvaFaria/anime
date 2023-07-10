@@ -1,4 +1,5 @@
 import { React } from "react";
+import { Link } from "react-router-dom";
 import { LoginMain, LoginConteiner, SignUpForm, SocialConteiner } from './styles'
 import {
   InputConteiner,
@@ -30,7 +31,9 @@ export default function Login() {
 
           <section>
             <FormHeader className="header">Don't Have An Account Yet?</FormHeader>
-            <ButtonRegister type="submit">Register now</ButtonRegister>
+            <Link to='/sign'>
+              <ButtonRegister type="submit">Register now</ButtonRegister>
+            </Link>
           </section>
         </LoginConteiner>
         
