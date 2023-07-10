@@ -6,7 +6,7 @@ import { TitleAnime } from "../Components/Componente/styles";
 import { Background } from "../Components/Componente/styles";
 import { AlinhamentoCards } from "../Components/Componente/styles";
 import { DisplayCards } from "../Components/Componente/styles";
-
+import { Link } from 'react-router-dom';
 export default function CardVertical(props) {
   return (
     <Card>
@@ -44,7 +44,9 @@ export default function CardVertical(props) {
                 <span className="categorie">{props.item.label[1]}</span>
           </div>
         </LabelConteiner> 
-          <TitleAnime href="#">{props.item.title}</TitleAnime>
+          <Link to='/animeDetails'>
+            <TitleAnime href="#">{props.item.title}</TitleAnime>
+          </Link>
         </article>
     </Card>
   );

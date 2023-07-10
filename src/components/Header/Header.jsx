@@ -1,4 +1,5 @@
 import { HeaderContainer } from "./styles";
+import { Link } from "react-router-dom";
 import logo from "../logo.png";
 export default function Header() {
   return (
@@ -8,16 +9,16 @@ export default function Header() {
           <img src={logo} alt="Logo do site" />
           <ul className="list">
             <li className="link-active">
-              <a href="#">Homepage</a>
+              <Link to='/'>Homepage</Link>
             </li>
             <li>
-              <a href="#">Categories ^</a>
+              <Link to='/animeDetails'>Categories ^</Link>
             </li>
             <li>
-              <a href="#">Our bloc</a>
+              <Link to='/blog'>Our bloc</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link href="#">Contact</Link>
             </li>
           </ul>
           <section className="conteiner">
@@ -25,10 +26,10 @@ export default function Header() {
               {/* <img src={search} alt="Icone de busca" className="search" /> */}
               <p>P</p>
             </button>
-            <button>
+            <Link to='/login'>
               {/* <img src={search} alt="Icone de busca" className="login" /> */}
               <p>L</p>
-            </button>
+            </Link>
           </section>
         </nav>
       </div>

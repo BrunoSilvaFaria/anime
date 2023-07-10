@@ -1,4 +1,5 @@
 import { CardSmall } from "./styles";
+import { Link } from "react-router-dom";
 import { LabelConteiner } from "../Components/Componente/styles";
 import { TitleAnime } from "../Components/Componente/styles";
 import { Background } from "../Components/Componente/styles";
@@ -16,7 +17,9 @@ export default function Header(props) {
                   <span className="categorie">{props.item.label[1]}</span>
                 </div>
             </LabelConteiner> 
-            <TitleAnime href="#" className="title">{props.item.title}</TitleAnime>
+            <Link to='/animeDetails'>
+              <TitleAnime className="title">{props.item.title}</TitleAnime>
+            </Link>
             <div className="view">
               <span>V</span>
               <span>{props.item.view}</span>

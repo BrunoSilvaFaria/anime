@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { Card } from "./styles";
 import { CardConteiner } from "../Components/Componente/styles";
 import { TitleAnime } from "../Components/Componente/styles";
@@ -29,7 +29,9 @@ export default function CardHorizontal(props) {
                     </div>
                   </CardConteiner>
               </DisplayCards>
-              <TitleAnime href="#">{props.item.title}</TitleAnime>
+              <Link to='/animeDetails'>
+                <TitleAnime>{props.item.title}</TitleAnime>
+              </Link>
             </AlinhamentoCards>
           </Background>
         </article>
