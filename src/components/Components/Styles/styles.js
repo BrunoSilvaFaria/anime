@@ -35,7 +35,8 @@ export const TextArea = css`
     margin-bottom: 35px;
     padding: 15px 0 15px 20px;
     height: 115px;
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
 `
 
 export const InputConteiner = styled.div`

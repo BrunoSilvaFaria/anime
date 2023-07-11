@@ -1,18 +1,41 @@
 import styled from "styled-components";
 import { ButtonStyle, DisplayFlex, FormInputs, TextArea } from "../../components/Components/Styles/styles";
 export const UlDisplay = styled.ul`
-display: flex;
-width: 610px;
-height: 100px;
-margin: auto;
-border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    max-width: 610px;
+    height: 100px;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+`
+export const BlogConteiner = styled.main`
+    width: 90%;
+    margin: 70px auto;
+    max-width: 1140px;
 `
 export const SocialLinks = styled(UlDisplay)`
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
     border-bottom: 0;
+    margin-top: 30px;
     a{
         span:first-child{
-            margin-right: 10px;
+                margin-right: 10px;
+            }
+        }
+    @media (min-width: 770px){
+            &{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    @media (max-width: 770px){
+        li{
+            width: calc(50% - 10px);
+        }
+        a{
+            width: 100%;
+            margin: 0 0 10px 0;
         }
     }
 `
@@ -44,9 +67,10 @@ export const GenrePost = styled(UlDisplay)`
     }
 `
 export const HeaderBlog = styled.header`
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
     text-align: center;
-    margin: 70px auto;
+    margin: 55px auto;
     h3{
         margin-bottom: 30px;
         font-size: 15px;
@@ -60,25 +84,36 @@ export const HeaderBlog = styled.header`
         }
     }
     h1{
-        font-size: 48px;
         font-weight: 700;
-        line-height: 60px;
         margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+    @media(min-width: 480px){
+        h1{
+            font-size: 34px;
+        }
+    }
+    @media(min-width: 770px){
+        h1{
+            font-size: 48px;
+            line-height: 60px;
+        }
     }
 `
 
 export const HeaderPost= styled.header`
     margin: 0 auto 45px auto;
-    width: 90%;
     max-width: 1140px;
+    width: 100%;
     p{
-        width: 610px;
+        max-width: 620px;
     }
 `
 
 export const SectionPost= styled.section`
     margin: 0 auto 45px auto;
-    width: 610px;
+    max-width: 610px;
     h2{
         margin-bottom: 35px;
     }
@@ -97,7 +132,7 @@ export const ParagraphPost = styled.p`
 
 export const Comments= styled.section`
     margin: 70px auto 45px auto;
-    width: 610px;
+    max-width: 610px;
     h3{
         margin-bottom: 35px;
         font-size: 24px;
@@ -106,7 +141,6 @@ export const Comments= styled.section`
 `
 
 export const Comment= styled.article`
-    width: 90%;
     display: flex;
     margin-bottom: 40px;
     h3{
@@ -117,8 +151,9 @@ export const Comment= styled.article`
     img{
         width: 70px;
         height: 70px;
-        margin-right: 40px;
+        margin-right: 25px;
     }
+
     section{
         span, p{
             color: #b7b7b7;
@@ -149,16 +184,22 @@ export const Comment= styled.article`
     }
 `
 export const CommentReply = styled(Comment)`
-    width: 495px;
-    align-self: flex-end;
+    @media (min-width: 480px){
+        align-self: flex-end;
+    }
+    @media (min-width: 650px){
+        width: 495px;
+    }
 `
 export const CommentConteiner = styled.article`
-    display: flex;
-    flex-direction: column;
+    @media (min-width: 480px){
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export const CommentForm = styled.form`
-    width: 610px;
+    max-width: 610px;
     margin: auto;
     border-top: 1px solid #242540;
     h3{
@@ -171,7 +212,8 @@ export const CommentForm = styled.form`
         font-size: 15px;
     }
     div{
-        ${FormInputs};
+        ${DisplayFlex};
+        flex-wrap: wrap;
         margin-bottom: 30px;
     }
     input[type=text],
@@ -183,6 +225,40 @@ export const CommentForm = styled.form`
         ${TextArea};
         padding-top: 15px;
     }
+
+    @media (max-width: 1200px){
+        input[type=text],
+        input[type=email]{
+            width: 330px;
+        }
+    }
+    @media (max-width: 1000px){
+        input[type=text],
+        input[type=email]{
+            width: 290px;
+        }
+    }
+
+    
+    @media (max-width: 775px){
+        input[type=text],
+        input[type=email]{
+            width: 250px;
+        }
+    }
+
+    @media (max-width: 575px){
+        input[type=text],
+        input[type=email], 
+        textarea{
+            width: 100%;
+        }
+        input[type=text]{
+            margin-bottom: 30px;
+        }
+    }
+
+    
 
     input, textarea, button{
         border-radius: 2px;

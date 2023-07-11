@@ -1,5 +1,5 @@
 import { React } from "react";
-import { SocialLinks, HeaderBlog, HeaderPost, SectionPost, ImgPost, ParagraphPost, GenrePost, AnchorPost, Comments, Comment, CommentConteiner, CommentReply, CommentForm} from './styles'
+import { BlogConteiner, SocialLinks, HeaderBlog, HeaderPost, SectionPost, ImgPost, ParagraphPost, GenrePost, AnchorPost, Comments, Comment, CommentConteiner, CommentReply, CommentForm} from './styles'
 import {
   LinkFace,
   LinkPinterest,
@@ -8,7 +8,7 @@ import {
 } from "../../components/Components/Styles/styles";
 export default function BlogDetails() {
   return (
-    <>
+    <BlogConteiner>
       <HeaderBlog>
         <h3>
           <span className="genres">Action, Magic </span>
@@ -138,6 +138,6 @@ export default function BlogDetails() {
 
         <button type="submit">Send Message</button>
       </CommentForm>
-      </>
+      </BlogConteiner>
     );
   }
