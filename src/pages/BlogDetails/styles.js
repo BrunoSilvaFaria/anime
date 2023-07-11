@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ButtonStyle, DisplayFlex, FormInputs, TextArea } from "../../components/Components/Styles/styles";
 export const UlDisplay = styled.ul`
 display: flex;
 width: 610px;
@@ -16,7 +17,7 @@ export const SocialLinks = styled(UlDisplay)`
     }
 `
 export const AnchorPost = styled(UlDisplay)`
-    justify-content: space-between;
+    ${DisplayFlex};
     align-items: center;
     a{
         font-size: 17px;
@@ -32,14 +33,13 @@ export const GenrePost = styled(UlDisplay)`
     li{
         margin-right: 10px;
         a{
+            ${ButtonStyle};
             background: #242540;
             border-radius: 2px;
-            padding: 6px 15px;
-            text-transform: uppercase;
-            font-size: 12px;
             color: #b7b7b7;
-            letter-spacing: 2px;
-            font-weight: 700;
+            font-size: 12px;
+            padding: 6px 15px;
+
         }
     }
 `
@@ -136,11 +136,11 @@ export const Comment= styled.article`
 
     button{
         background: #242540;
+        letter-spacing: 2px;
         font-size: 16px;
         margin-right: 15px;
         padding: 6px 20px;
         border-radius: 2px;
-        letter-spacing: 2px;
         transition: all, 0.3s;
     }
 
@@ -166,14 +166,12 @@ export const CommentForm = styled.form`
         margin-bottom: 30px;
     }
     input, textarea{
+        ${FormInputs};
         padding: 10px 0 10px 20px;
-        background: #fff;
-        color: #b7b7b7;
         font-size: 15px;
     }
     div{
-        display: flex;
-        justify-content: space-between;
+        ${FormInputs};
         margin-bottom: 30px;
     }
     input[type=text],
@@ -182,12 +180,8 @@ export const CommentForm = styled.form`
         width: 290px;
     }
     textarea{
-        width: 610px;
-        height: 115px;
-        resize: none;
+        ${TextArea};
         padding-top: 15px;
-        overflow: hidden;
-        margin-bottom: 35px;
     }
 
     input, textarea, button{
@@ -195,12 +189,9 @@ export const CommentForm = styled.form`
     }
 
     button{
-        text-transform: uppercase;
+        ${ButtonStyle};
         font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 2px;
         padding: 12px 30px;
-        background: #e53637;
     }
 `
 

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { DisplayFlex } from "../../components/Components/Styles/styles";
 
 export const BlogConteiner = styled.section`
     margin: auto;
@@ -6,16 +7,14 @@ export const BlogConteiner = styled.section`
     max-width: 930px;
     margin: 70px auto;
     .cards{
-        display: flex;
         width: 830px;
-        justify-content: space-between;
+        ${DisplayFlex};
     }
     `
     
 export const Cards = styled.section`
-    display: flex;
+    ${DisplayFlex};
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 410px;
 `
 export const Card = styled.article`

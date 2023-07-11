@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Card } from "../../components/CardVertical/styles";
+import { ButtonStyle, TextArea } from "../../components/Components/Styles/styles";
 import { HeaderTitle } from "../../components/Components/Styles/styles.js";
 
 export const WatchConteiner = styled.section`
@@ -25,24 +25,14 @@ export const Comment = styled.form`
         color: red;
     }
     textarea{
-        color: #b7b7b7;
-        background: #fff;
-        width: 610px;
-        height: 115px;
-        resize: none;
-        padding: 15px 0 15px 20px;
-        overflow: hidden;
-        margin-bottom: 35px;
+        ${TextArea};
         border-radius: 5px;
     }
 
     button{
-        text-transform: uppercase;
+        ${ButtonStyle};
         font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 2px;
         padding: 10px 30px;
-        background: #e53637;
         border-radius: 2px;
     }
 `

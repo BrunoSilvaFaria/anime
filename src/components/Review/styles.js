@@ -4,14 +4,14 @@ import { DisplayFlex } from '../Components/Styles/styles';
 export const ReviewConteiner= styled.section`
     width: 610px;
 `
-export const Review = styled(DisplayFlex)`
-    width: 610px;
+export const Review = styled.section`
+    ${DisplayFlex};
+        width: 610px;
     &:first-of-type{
         margin-top: 20px;
     }
     margin-top: 15px;
     .card{
-        /* position: absolute; */
         overflow: hidden;
         background: #1d1e39;
         padding: 18px 30px 16px 20px;
@@ -28,8 +28,7 @@ export const Review = styled(DisplayFlex)`
     header{
         margin-bottom: 10px;
         width: fit-content;
-        display: flex;
-        justify-content: space-between;
+        ${DisplayFlex};
         a{
             color: #ffffff;
             font-weight: 700;

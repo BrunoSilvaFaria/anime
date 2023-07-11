@@ -11,9 +11,9 @@ export const HomeConteiner = styled.div`
     @media (min-width: 620px) and (max-width: 1190px){
         .conteiner__aside{
             display: flex;
-            width: 100%;
             justify-content: space-between;
             margin: auto;
+            width: 100%;
         }
     }
 `

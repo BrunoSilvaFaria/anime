@@ -3,14 +3,12 @@ import { HeaderTitle } from "../../components/Components/Styles/styles.js";
 
 export const HeaderEpisodes = styled(HeaderTitle)`
     font-size: 18px;
-    margin-bottom: 20px;
-    margin-top: 45px;
+    margin: 45px auto 20px auto;
 `
 export const Conteiner = styled.section`
-    margin: auto;
-    width: 90%;
-    max-width: 930px;
     margin: 70px auto;
+    max-width: 930px;
+    width: 90%;
 `
 export const Episodes = styled.section`
     width: 930px;
@@ -18,7 +16,6 @@ export const Episodes = styled.section`
     ul{
         margin-top: 30px;
         display: flex;
-        /* justify-content: space-between; */
         flex-wrap: wrap;
     }
     li{
@@ -29,12 +26,12 @@ export const Episodes = styled.section`
         margin-bottom: 15px;
     }
     a{
-        text-align: center;
-        width: 180px;
         background: #1d1e39;
+        border-radius: 5px;
+        text-align: center;
         margin-left: 20px;
         padding: 15px;
-        border-radius: 5px;
+        width: 180px;
     }
     
     img, a{

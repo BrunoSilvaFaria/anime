@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DisplayFlex } from '../../components/Components/Styles/styles';
 
 export const ConteinerSmall = styled.section`
     @media (max-width: 550px) {
@@ -12,8 +13,7 @@ export const CardSmall = styled.section`
     article{
             margin-top: 18px;
             width: 290px;
-            display: flex;
-            justify-content: space-between;
+            ${DisplayFlex};
             .alinhamento{
                 margin-top: 5px;
                 width: 190px;

@@ -1,12 +1,45 @@
-import styled from "styled-components";
+import { styled, css } from "styled-components";
 // === Default ===
-export const DisplayFlex = styled.div`
+// export const DisplayFlex = styled.div`
+//     display: flex;
+//     justify-content: space-between;   
+// `
+export const DisplayFlex = css`
     display: flex;
     justify-content: space-between;   
 `
+
+
+// === Tipografia ===
+export const Links = css`
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+`
+
+export const TitleAnime = styled.a`
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 18px;
+`
+
 // === Input / Form ===
-export const InputConteiner = styled.div`
+export const FormInputs = css`
+    color: #b7b7b7;
     background: #fff;
+`
+export const TextArea = css`
+    ${FormInputs};
+    overflow: hidden;
+    resize: none;
+    margin-bottom: 35px;
+    padding: 15px 0 15px 20px;
+    height: 115px;
+    width: 610px;
+`
+
+export const InputConteiner = styled.div`
+    ${FormInputs};
     width: 370px;
     padding: 10px 0;
     margin-bottom: 20px;
@@ -17,9 +50,9 @@ export const InputConteiner = styled.div`
     }
 `
 export const Input = styled.input`
+    ${FormInputs};
     border-left: 1px solid #b7b7b7;
     padding-left: 20px;
-    color: #b7b7b7;
     font-size: 15px;
     height: 30px;
 `
@@ -30,41 +63,46 @@ export const FormHeader = styled.h2`
         margin-bottom: 30px;
         padding-top: 40px;
 `
+export const Form = css`
+    width: 435px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 90px 0 0 65px;
+`
+export const FormConteiner = css`
+    ${DisplayFlex};
+    align-items: baseline;
+    margin: auto;
+`
+    
 
 // === Button ===
-export const Button = styled.button`
-    border-radius: 4px;
+export const ButtonStyle = css`
+    ${Links};
     background: #e53637;
+`
+export const Button = styled.button`
+    ${ButtonStyle};
+    border-radius: 4px;
     padding: 15px 20px;
-    margin-right: 11px;
-    margin-bottom: 60px;
     margin: 0 0 60px 11px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
     span{
         font-size: 14px;
     }
 `
-export const ButtonLogin = styled(Button)`
-    border-radius: 0;
+export const ButtonLogin = styled.button`
+    ${ButtonStyle};
     padding: 12px 30px;
     margin: 10px 0 40px 0;
 `
 
 export const ButtonRegister = styled.a`
-    background: #e53637;
+    ${ButtonStyle};
     padding: 12px 30px;
     margin-top: 30px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
 `
 
 export const ButtonSocial = styled(ButtonLogin)`
-    border-radius: 0;
+    ${ButtonStyle};
     padding: 10px;
     width: 380px;
     margin: 0 0 15px 0;
@@ -138,11 +176,7 @@ export const CardConteiner = styled.div`
     }
 `
 
-export const TitleAnime = styled.a`
-    font-weight: 700;
-    line-height: 26px;
-    font-size: 18px;
-`
+
 
 export const Background = styled.div`
         background-repeat: no-repeat;
@@ -151,19 +185,22 @@ export const Background = styled.div`
         margin-bottom: 20px;   
 `
 
-export const AlinhamentoCards = styled(DisplayFlex)`
+export const AlinhamentoCards = styled.div`
+    ${DisplayFlex};
     flex-direction: column;
     align-content: center;
     align-items: flex-start;   
 `
 
 
-export const DisplayCards = styled(DisplayFlex)`
+export const DisplayCards = styled.div`
+    ${DisplayFlex};
     width: 100%;  
 `
 
 // === Headers ===
-export const Header = styled(DisplayFlex)`
+export const Header = styled.header`
+    ${DisplayFlex};
     align-items: center;
     flex-wrap: wrap;
 `
@@ -172,10 +209,10 @@ export const HeaderTitle= styled.h4`
     border-left: 3px solid #e53637;
     font-size: 1.5em;
     font-weight: 700;
-    text-transform: uppercase;
+    height: 30px;
     line-height: 25px;
     padding-left: 15px;
-    height: 30px;
+    text-transform: uppercase;
     width: 250px;
 `
 export const HeaderSubtitle= styled(HeaderTitle)`
@@ -205,9 +242,7 @@ export const HeaderLarge = styled(Header)`
         display: block;
         a{
             font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            ${Links};
         }
         span{
             font-size: 18px;

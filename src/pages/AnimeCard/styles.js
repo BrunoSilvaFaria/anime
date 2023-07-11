@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Card } from "../../components/CardVertical/styles";
+import { DisplayFlex } from "../../components/Components/Styles/styles";
 
 export const CardDetails = styled(Card)`
     width: 210px;
@@ -16,10 +17,10 @@ export const CardDetails = styled(Card)`
     }
 `
 export const DetailsConteiner = styled.section`
-    display: flex;
-    justify-content: space-between;
+    ${DisplayFlex}
     align-items: flex-start;
-    `
+`
+
 export const AnimeInfo = styled.section`
     width: 690px;
     header{
@@ -48,8 +49,7 @@ export const AnimeInfo = styled.section`
         line-height: 30px;  
     }
     ul{
-        display: flex;
-        justify-content: space-between;
+        ${DisplayFlex};
         width: 610px;
         margin-bottom: 35px;
     }

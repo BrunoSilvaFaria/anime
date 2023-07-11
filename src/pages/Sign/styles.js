@@ -1,10 +1,9 @@
 import styled from "styled-components";
+import { Form, FormConteiner } from "../../components/Components/Styles/styles";
+
 export const SignUpForm = styled.form`
-    width: 435px;
+    ${Form}
     height: 450px;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 90px;
-    margin-left: 65px;
     h2{
         font-size: 30px;
         font-weight: 700;
@@ -22,9 +21,6 @@ export const SignUpForm = styled.form`
 `
 
 export const SignUpConteiner = styled.section`
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    ${FormConteiner};
     width: 940px;
-    margin: auto;
 `  

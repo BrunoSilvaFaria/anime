@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { DisplayFlex } from '../../components/Components/Styles/styles';
+
 export  const ConteinerVertical = styled.section`
     margin: 70px auto;
     @media (max-width: 450px) {
@@ -10,8 +12,7 @@ export  const ConteinerVertical = styled.section`
     }
     max-width: 720px;
     div{
-        display: flex;
-        justify-content: space-between;
+        ${DisplayFlex};
         flex-wrap: wrap;
     }
 `
