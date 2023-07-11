@@ -213,16 +213,19 @@ export const HeaderTitle= styled.h4`
     line-height: 25px;
     padding-left: 15px;
     text-transform: uppercase;
-    width: 250px;
 `
-export const HeaderSubtitle= styled(HeaderTitle)`
+export const HeaderSubtitle = styled(HeaderTitle)`
      font-size: 1.125em;
      font-weight: 600;
      line-height: 30px;
      padding-left: 10px;
-`
+     `
 
 export const HeaderMedium = styled(Header)`
+    ${DisplayFlex};
+    ul{
+        ${DisplayFlex};
+    }
     li{
         list-style: none;
             a{

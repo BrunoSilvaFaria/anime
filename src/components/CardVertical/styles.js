@@ -6,11 +6,11 @@ export  const ConteinerVertical = styled.section`
     @media (max-width: 450px) {
         width: 100%;
     }
-    @media (min-width: 550px) and (max-width: 740px) {
+    @media (min-width: 550px) and (max-width: 750px) {
         width: 510px;
         margin: auto;
     }
-    max-width: 720px;
+    width: 750px;
     div{
         ${DisplayFlex};
         flex-wrap: wrap;

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 export const HomeConteiner = styled.div`
-    max-width: 1140px;
     width: 95%;
     margin: auto;
     @media (min-width: 1200px){
+        width: 1140px;
+        justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
     }

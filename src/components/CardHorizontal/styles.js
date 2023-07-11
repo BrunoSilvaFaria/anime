@@ -3,18 +3,16 @@ export const ConteinerHorizontal = styled.section`
     @media (max-width: 610px) {
         width: 510px;
     }
+    @media (max-width: 450px) {
+        width: 100%;
+    }
     margin: 70px auto;
-    width: 290px;
+    width: 360px;
 `
 export const Card = styled.article`
-    @media (max-width: 610px) {
-        width: 510px;
-        margin: 18px auto;
-    }
- 
+    width: 100%;
     margin-top: 18px;
     height: 190px;
-    width: 290px;
     .alinhamento{
         height: 160px;
         width: 90%;
