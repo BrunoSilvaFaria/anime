@@ -1,8 +1,8 @@
 import { CardSmall } from "./styles";
 import { Link } from "react-router-dom";
-import { LabelConteiner } from "../Components/Componente/styles";
-import { TitleAnime } from "../Components/Componente/styles";
-import { Background } from "../Components/Componente/styles";
+import { LabelConteiner } from "../Components/Styles/styles";
+import { TitleAnime } from "../Components/Styles/styles";
+import { Background } from "../Components/Styles/styles";
 export default function Header(props) {
   return (
     <CardSmall>

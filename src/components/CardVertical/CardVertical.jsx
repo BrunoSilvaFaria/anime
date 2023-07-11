@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card } from "./styles";
-import { LabelConteiner } from "../Components/Componente/styles";
-import { CardConteiner } from "../Components/Componente/styles";
-import { TitleAnime } from "../Components/Componente/styles";
-import { Background } from "../Components/Componente/styles";
-import { AlinhamentoCards } from "../Components/Componente/styles";
-import { DisplayCards } from "../Components/Componente/styles";
+import { LabelConteiner } from "../Components/Styles/styles";
+import { CardConteiner } from "../Components/Styles/styles";
+import { TitleAnime } from "../Components/Styles/styles";
+import { Background } from "../Components/Styles/styles";
+import { AlinhamentoCards } from "../Components/Styles/styles";
+import { DisplayCards } from "../Components/Styles/styles";
 import { Link } from 'react-router-dom';
 export default function CardVertical(props) {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import { HeaderTitle} from "./styles";
-import { HeaderLarge} from "./styles";
+import { HeaderTitle} from "../Styles/styles";
+import { HeaderLarge} from "../Styles/styles";
 export default function HeaderVertical(props) {
     return (
         <div>

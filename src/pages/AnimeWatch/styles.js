@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Card } from "../../components/CardVertical/styles";
-import { HeaderTitle } from "../../components/Components/Componente/styles";
+import { HeaderTitle } from "../../components/Components/Styles/styles.js";
 
 export const WatchConteiner = styled.section`
     width: 90%;

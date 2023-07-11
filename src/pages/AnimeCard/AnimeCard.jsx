@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Background } from "../../components/Components/Componente/styles.js";
-import { AlinhamentoCards } from "../../components/Components/Componente/styles.js";
-import { DisplayCards } from "../../components/Components/Componente/styles.js";
-import { CardConteiner } from "../../components/Components/Componente/styles.js";
+import { Background } from "../../components/Components/Styles/styles.js";
+import { AlinhamentoCards } from "../../components/Components/Styles/styles.js";
+import { DisplayCards } from "../../components/Components/Styles/styles.js";
+import { CardConteiner } from "../../components/Components/Styles/styles.js";
 
 import { AnimeInfo } from "./styles";
-import { Button } from "../../components/Components/Componente/styles.js";
+import { Button } from "../../components/Components/Styles/styles.js";
 import { CardDetails } from "./styles";
 import { DetailsConteiner } from "./styles";
 export default function AnimeCard() {

@@ -5,7 +5,7 @@ import {
   Input,
   ButtonLogin,
   ButtonFace, ButtonGoogle, ButtonTwitter, FormHeader
-} from "../../components/Components/Componente/styles";
+} from "../../components/Components/Styles/styles";
 export default function Sign() {
   return (
         <SignUpConteiner>

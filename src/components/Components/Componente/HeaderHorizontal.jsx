@@ -1,7 +1,7 @@
 import React from 'react';
-import { HeaderMedium } from "./styles";
-import { HeaderSubtitle } from "./styles";
-import { DisplayFlex } from "./styles";
+import { HeaderMedium } from "../Styles/styles";
+import { HeaderSubtitle } from "../Styles/styles";
+import { DisplayFlex } from "../Styles/styles";
 export default function HeaderHorizontal(props) {
     return (
             <HeaderMedium>

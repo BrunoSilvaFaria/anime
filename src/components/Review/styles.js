@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex } from '../Components/Componente/styles';
+import { DisplayFlex } from '../Components/Styles/styles';
 
 export const ReviewConteiner= styled.section`
     width: 610px;

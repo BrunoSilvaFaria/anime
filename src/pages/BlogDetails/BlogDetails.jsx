@@ -5,7 +5,7 @@ import {
   LinkPinterest,
   LinkLinkedlin,
   LinkTwitter
-} from "../../components/Components/Componente/styles";
+} from "../../components/Components/Styles/styles";
 export default function BlogDetails() {
   return (
     <>

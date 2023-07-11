@@ -6,7 +6,7 @@ import {
   Input,
   ButtonLogin,
   ButtonFace, ButtonGoogle, ButtonTwitter, FormHeader, ButtonRegister
-} from "../../components/Components/Componente/styles";
+} from "../../components/Components/Styles/styles";
 export default function Login() {
   return (
       <LoginMain>
