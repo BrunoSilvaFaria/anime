@@ -1,27 +1,41 @@
-import { styled } from "styled-components";
+import { styled,css } from "styled-components";
 import { DisplayFlex } from "../../components/Components/Styles/styles";
 
 export const BlogConteiner = styled.section`
-    margin: auto;
-    width: 90%;
-    max-width: 930px;
+    width: 95%;
+    max-width: 1160px;
     margin: 70px auto;
     .cards{
-        width: 830px;
         ${DisplayFlex};
+        flex-wrap: wrap;
     }
-    `
+`
     
 export const Cards = styled.section`
     ${DisplayFlex};
     flex-wrap: wrap;
-    width: 410px;
+    @media (min-width: 575px){
+        width: 530px;
+    }
+    @media (min-width: 770px){
+        width: 710px;
+    }
+    @media (max-width: 990px){
+        margin: auto;
+    }
+    @media (min-width: 990px){
+        width: 470px;
+    }
+    @media (min-width: 1200px){
+        width: 575px;
+    }
 `
 export const Card = styled.article`
+    width: 100%;
     .background{
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top center;
         margin-bottom: 10px;
     }
     .background--black{
@@ -29,13 +43,14 @@ export const Card = styled.article`
     }
     .background,
     .background--black{
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height:  285px;
     }
+
     .alinhamento{
         margin: auto;
         width: 90%;
-        height: 180px;
+        height: 265px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -54,33 +69,39 @@ export const Card = styled.article`
         .link{
             font-size: 20px;
             line-height: 30px; 
-        }
-
-        
-        
+        }        
+`
+export const Backgrounds = css`
+    &{
+        width: 49%;
+    }
+`
+export const BackgroundChild = css`
+    &{
+        width: 100%;
+    }
+    .background,
+    .background--black{
+        height:  580px;
+    }
+    .alinhamento{
+        height: 560px;
+    }
 `
 export const CardsMain = styled(Card)`
+        @media (min-width: 575px){
+            ${Backgrounds};
+        }
         &:nth-child(3n + 1){
-            .background,
-            .background--black{
-                width: 410px;
-                height: 400px;
-            }
-            .alinhamento{
-                height: 380px;
-            }
+            ${BackgroundChild};
         }
 `
 
 export const CardsSec = styled(Card)`
-        &:nth-child(3n + 3){
-            .background,
-            .background--black{
-                width: 410px;
-                height: 400px;
-            }
-            .alinhamento{
-                height: 380px;
-            }
-        }
+    @media (min-width: 575px){
+            ${Backgrounds};
+    }
+    &:nth-child(3n + 3){
+        ${BackgroundChild};
+    }
 `
