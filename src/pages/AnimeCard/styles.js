@@ -3,43 +3,75 @@ import { Card } from "../../components/CardVertical/styles";
 import { DisplayFlex } from "../../components/Components/Styles/styles";
 
 export const CardDetails = styled(Card)`
-    width: 210px;
+    width: 260px;
     height: 440px;
     margin: 0;
+    @media(max-width: 990px){
+        width: 100%;
+        margin: 0 auto 40px auto;
+    }
+    
     .background{
         background-position: center;
-        width: 210px;
-        height: 440px;
+        background-size: cover;
+        height: inherit;
     }
     .alinhamento{
         justify-content: flex-end;
-        height: 415px;
+        height: 95%;
     }
 `
 export const DetailsConteiner = styled.section`
     ${DisplayFlex}
     align-items: flex-start;
+    flex-wrap: wrap;
+    @media(max-width: 989px){
+        width: 690px;
+        margin: 0 auto;
+    }
+    @media(max-width: 774px){
+        width: 510px;
+    }
+    @media(max-width: 574px){
+        width: 100%;
+    }
 `
 
 export const AnimeInfo = styled.section`
-    width: 690px;
+    width: 100%;
+    max-width: 850px;
+    @media(max-width: 990px){
+        margin: 0 auto 40px auto;
+    }
     header{
+        ${DisplayFlex};
+        flex-wrap: wrap;
         h1{
               color: #ffffff;
               font-size: 30px;
               font-weight: 700;
-              margin-bottom: 13px;
+              margin-bottom: 15px;
         }
         p{
             font-size: 15px;
             color: #b7b7b7;
             display: block;
         }
+        @media(max-width: 775px){
+            p{
+                margin-bottom: 20px;
+            }
+        }
         
-        span{
-            display: block;
-            font-size: 18px;
-            color: #b7b7b7;
+        div{
+            span{
+                display: block;
+                font-size: 18px;
+                color: #b7b7b7;
+            }
+            span:first-child{
+                margin-bottom: 5px;
+            }
         }
     }
     .description{
@@ -49,9 +81,18 @@ export const AnimeInfo = styled.section`
         line-height: 30px;  
     }
     ul{
+        margin-bottom: 35px;
         ${DisplayFlex};
         width: 610px;
-        margin-bottom: 35px;
+    }
+    @media (max-width: 774px){
+        ul{
+            width: 100%;
+            display: block;
+        }
+        ul div:first-child{
+            margin-bottom: 20px;
+        }
     }
     li{
         position: relative;
@@ -79,5 +120,8 @@ export const AnimeInfo = styled.section`
         width: 6px;
         background: #b7b7b7;
         content: "";
+    }
+    .button{
+        margin-left: 0;
     }
 `

@@ -7,11 +7,11 @@ export const HeaderEpisodes = styled(HeaderTitle)`
 `
 export const Conteiner = styled.section`
     margin: 70px auto;
-    max-width: 930px;
-    width: 90%;
+    max-width: 1140px;
+    width: 95%;
 `
 export const Episodes = styled.section`
-    width: 930px;
+    max-width: 930px;
     margin: auto;
     ul{
         margin-top: 30px;
@@ -33,6 +33,14 @@ export const Episodes = styled.section`
         padding: 15px;
         width: 180px;
     }
+    @media (max-width: 450px){
+        a{
+            width: 150px;
+        }
+        img{
+            width: 120px;
+        }
+    }
     
     img, a{
         display: block;
@@ -41,5 +49,9 @@ export const Episodes = styled.section`
     .paginas a{
         width: fit-content;
         padding: 10px 25px;
+        transition: all, 0.3s;
+    }
+    .paginas a:hover{
+        background: #e53637;
     }
 `

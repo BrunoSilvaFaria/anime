@@ -101,7 +101,7 @@ export default function AnimeCard() {
                   </li>
                 </div>
               </ul>
-              <Button> <span>^</span> Follow</Button>
+              <Button className="button"> <span>^</span> Follow</Button>
               <Button><Link to='/animeWatch'>Watch Now</Link></Button>
             </AnimeInfo>
           </DetailsConteiner>

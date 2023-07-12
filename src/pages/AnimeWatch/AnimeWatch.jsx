@@ -8,9 +8,9 @@ export default function AnimeWatch() {
       <VideoConteiner>
         <video src="/assets/videos/1.mp4" poster="/assets/videos/anime-watch.jpg" controls></video>
         <Episodes>
-          <a href="">Episódio anterior</a>
-          <Link to='/animeEpisodes'><a href="">Lista de episodios</a></Link>
-          <a href="">Próximo episodio</a>
+          <a href="">&#8592;</a>
+          <Link to='/animeEpisodes'>Lista de episodios</Link>
+          <a href="">&#8594;</a>
         </Episodes>
       </VideoConteiner>
       <Reviews />
