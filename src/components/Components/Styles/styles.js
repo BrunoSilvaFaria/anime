@@ -1,9 +1,5 @@
 import { styled, css } from "styled-components";
 // === Default ===
-// export const DisplayFlex = styled.div`
-//     display: flex;
-//     justify-content: space-between;   
-// `
 export const DisplayFlex = css`
     display: flex;
     justify-content: space-between;   

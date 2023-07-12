@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { DisplayFlex } from '../Components/Styles/styles';
 
 export const ReviewConteiner= styled.section`
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
 `
 export const Review = styled.section`
-    ${DisplayFlex};
-        width: 610px;
+    ${DisplayFlex};width: 100%;
     &:first-of-type{
         margin-top: 20px;
     }
@@ -16,7 +16,23 @@ export const Review = styled.section`
         background: #1d1e39;
         padding: 18px 30px 16px 20px;
         border-radius: 10px;
-        width: 540px;
+        width: 80%;
+        max-width: 540px;
+    }
+    @media (min-width: 430px) {
+        .card{
+            width: 84%;
+        }
+    }
+    @media (min-width: 500px) {
+        .card{
+            width: 87%;
+        }
+    }
+    @media (min-width: 675px) {
+        .card{
+            width: 540px;
+        }
     }
 
     img{
