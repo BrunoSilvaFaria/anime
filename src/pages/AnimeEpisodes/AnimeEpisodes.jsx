@@ -1,5 +1,5 @@
 import React from "react";
-import AnimeCard from "../AnimeCard/AnimeCard";
+import AnimeCard from "../../components/AnimeCard/AnimeCard.jsx";
 import { HeaderEpisodes, Episodes, Conteiner } from './styles.js';
 export default function AnimeEpisodes() {
   return (
