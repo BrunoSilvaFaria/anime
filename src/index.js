@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 import Home from './pages/Home/Home';
-import AnimeDetails from './pages/Anime Details/AnimeDetails';
+import AnimeDetails from './pages/AnimeDetails/AnimeDetails';
 import AnimeEpisodes from './pages/AnimeEpisodes/AnimeEpisodes';
 import AnimeWatch from './pages/AnimeWatch/AnimeWatch';
 import BlogDetails from './pages/BlogDetails/BlogDetails'
