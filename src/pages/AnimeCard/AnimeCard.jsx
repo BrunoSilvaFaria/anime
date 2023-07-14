@@ -11,7 +11,7 @@ import { Button } from "../../components/Button/styles.js";
 import { AnimeInfo } from "./styles";
 import { CardDetails } from "./styles";
 import { DetailsConteiner } from "./styles";
-import { criaElementos } from "../../components/Cards/criaElementos.js";
+import { criaElementos } from "../../components/criaElementos.js";
 import CardVertical from "../../components/Cards/CardVertical/CardVertical.jsx";
 
 export default function AnimeCard() {

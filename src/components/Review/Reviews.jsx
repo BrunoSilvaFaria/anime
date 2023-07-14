@@ -4,7 +4,7 @@ import ReviewSection from './Review';
 import HeaderSmall from "../Cards/Header/HeaderSmall";
 import { ReviewConteiner } from "./styles";
 
-import { criaElementos } from "../Cards/criaElementos";
+import { criaElementos } from "../criaElementos";
 export default function Reviews() {
   return (
       <ReviewConteiner>
