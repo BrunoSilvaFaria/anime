@@ -1,24 +1,30 @@
 import styled from "styled-components";
-import { Card } from "../../components/CardVertical/styles";
+import { Card } from "../../components/Cards//CardVertical/styles";
 import { DisplayFlex } from "../../components/Components/Styles/styles";
 
 export const CardDetails = styled(Card)`
-    width: 260px;
-    height: 440px;
-    margin: 0;
-    @media(max-width: 990px){
-        width: 100%;
-        margin: 0 auto 40px auto;
-    }
+    &, article{
+            width: 260px;
+            height: 440px;
+            margin: 0;
+        }
     
-    .background{
-        background-position: center;
-        background-size: cover;
-        height: inherit;
+    @media(max-width: 990px){
+        &, article{
+            width: 100%;
+            margin: 0 auto 40px auto;
+        }
     }
-    .alinhamento{
-        justify-content: flex-end;
-        height: 95%;
+    article{
+        .background{
+            background-position: center;
+            background-size: cover;
+            height: inherit;
+        }
+        .alinhamento{
+            justify-content: flex-end;
+            height: 95%;
+        }
     }
 `
 export const DetailsConteiner = styled.section`

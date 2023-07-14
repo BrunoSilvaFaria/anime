@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeaderTitle } from "../../components/Components/Styles/styles.js";
+import { HeaderTitle } from "../../components/Cards/Header/styles";
 
 export const HeaderEpisodes = styled(HeaderTitle)`
     font-size: 18px;

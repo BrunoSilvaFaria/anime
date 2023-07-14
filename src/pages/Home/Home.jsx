@@ -1,16 +1,16 @@
 import React from "react";
 
-import CardVertical from "../../components/CardVertical/CardVertical";
-import { ConteinerVertical } from "../../components/CardVertical/styles";
-import HeaderVertical from "../../components/Components/Componente/HeaderVertical";
+import CardVertical from "../../components/Cards/CardVertical/CardVertical";
+import { ConteinerVertical } from "../../components/Cards/CardVertical/styles";
+import HeaderVertical from "../../components/Cards/Header/HeaderVertical";
 
-import CardHorizontal from "../../components/CardHorizontal/CardHorizontal";
-import { ConteinerHorizontal } from "../../components/CardHorizontal/styles";
-import HeaderHorizontal from "../../components/Components/Componente/HeaderHorizontal";
+import CardHorizontal from "../../components/Cards/CardHorizontal/CardHorizontal"
+import { ConteinerHorizontal } from "../../components/Cards/CardHorizontal/styles";
+import HeaderHorizontal from "../../components/Cards/Header/HeaderHorizontal";
 
-import CardSmall from "../../components/CardSmall/CardSmall";
-import { ConteinerSmall } from "../../components/CardSmall/styles";
-import HeaderSmall from "../../components/Components/Componente/HeaderSmall";
+import CardSmall from "../../components/Cards/CardSmall/CardSmall";
+import { ConteinerSmall } from "../../components/Cards/CardSmall/styles";
+import HeaderSmall from "../../components/Cards/Header/HeaderSmall";
 
 import dataTrending from '../../data/trendingData';
 import dataPopular from '../../data/popularData';
@@ -19,40 +19,10 @@ import dataLive from '../../data/liveData';
 import dataView from '../../data/viewData';
 import dataComment from '../../data/commentData';
 
+import { criaElementos } from "../../components/criaElementos";
 import { HomeConteiner } from './styles';
-import Header from '../../components/Header/Header';
 
 export default function Home() {
-  const asideViews = dataView.map((item) => {
-    return (
-      <CardHorizontal
-        key={item.title}
-        item={item}
-      />
-    )
-  })
-
-  const asideComment = dataComment.map((item) => {
-    return (
-      <CardSmall
-        key={item.title}
-        item={item}
-      />
-    )
-  })
-
-  function criaCardVertical(arquivo) {
-    return arquivo.map((item) => {
-      return (
-        <CardVertical
-          key={item.title}
-          item={item}
-        />
-      )
-    });
-    
-  };
-
   return (
       <div>
         <div>
@@ -60,33 +30,35 @@ export default function Home() {
           <main>
             <ConteinerVertical>
               <HeaderVertical title="trending now"></HeaderVertical>
-              <div>{criaCardVertical(dataTrending)}</div>
+                <div>{criaElementos(dataTrending, CardVertical)}</div>
             </ConteinerVertical>
+            
             <ConteinerVertical>
               <HeaderVertical title="popular"></HeaderVertical>
-              <div>{criaCardVertical(dataPopular)}</div>
+              <div>{criaElementos(dataPopular, CardVertical)}</div>
             </ConteinerVertical>
             <ConteinerVertical>
               <HeaderVertical title="recently added shows"/>
-              <div>{criaCardVertical(dataRecent)}</div>
+              <div>{criaElementos(dataRecent, CardVertical)}</div>
             </ConteinerVertical>
         
             <ConteinerVertical>
               <HeaderVertical title="live action"/>
-              <div>{criaCardVertical(dataLive)}</div>
+              <div>{criaElementos(dataLive, CardVertical)}</div>
             </ConteinerVertical>
           </main>
+
           <aside className="conteiner__aside">
             <aside>
               <ConteinerHorizontal>
                 <HeaderHorizontal title="top views"></HeaderHorizontal>
-                {asideViews}
+                <div>{criaElementos(dataView, CardHorizontal)}</div>
               </ConteinerHorizontal>
             </aside>
                   <aside>
               <ConteinerSmall>
                 <HeaderSmall title="new comment"></HeaderSmall>
-                {asideComment}
+                <div>{criaElementos(dataComment, CardSmall)}</div>
               </ConteinerSmall>
             </aside>
           </aside>

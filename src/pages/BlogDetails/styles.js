@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { ButtonStyle, DisplayFlex, FormInputs, TextArea } from "../../components/Components/Styles/styles";
+import { DisplayFlex } from "../../components/Components/Styles/styles";
+import {
+    FormInputs,
+    TextArea
+} from "../../components/Form/styles.js";
+import { ButtonStyle } from "../../components/Button/styles.js";
+
 export const UlDisplay = styled.ul`
     display: flex;
     max-width: 610px;

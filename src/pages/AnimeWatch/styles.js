@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { ButtonStyle, TextArea} from "../../components/Components/Styles/styles";
-import { HeaderTitle } from "../../components/Components/Styles/styles.js";
+import { TextArea } from "../../components/Form/styles";
+import { ButtonStyle } from "../../components/Button/styles";
+import { HeaderTitle } from "../../components/Cards/Header/styles";
 
 export const WatchConteiner = styled.section`
     width: 90%;

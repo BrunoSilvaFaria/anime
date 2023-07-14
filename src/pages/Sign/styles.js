@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Form, FormConteiner } from "../../components/Components/Styles/styles";
+import { Form, FormConteiner } from "../../components/Form/styles";
 
 export const SignUpForm = styled.form`
     ${Form}

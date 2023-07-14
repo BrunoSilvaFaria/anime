@@ -1,11 +1,26 @@
 import { React } from "react";
-import { BlogConteiner, SocialLinks, HeaderBlog, HeaderPost, SectionPost, ImgPost, ParagraphPost, GenrePost, AnchorPost, Comments, Comment, CommentConteiner, CommentReply, CommentForm} from './styles'
+import {
+  BlogConteiner,
+  SocialLinks,
+  HeaderBlog,
+  HeaderPost,
+  SectionPost,
+  ImgPost,
+  ParagraphPost,
+  GenrePost,
+  AnchorPost,
+  Comments,
+  Comment,
+  CommentConteiner,
+  CommentReply,
+  CommentForm
+} from './styles'
 import {
   LinkFace,
   LinkPinterest,
   LinkLinkedlin,
   LinkTwitter
-} from "../../components/Components/Styles/styles";
+} from "../../components/Button/styles";
 export default function BlogDetails() {
   return (
     <BlogConteiner>

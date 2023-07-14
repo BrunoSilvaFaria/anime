@@ -1,39 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Background } from "../../components/Components/Styles/styles.js";
-import { AlinhamentoCards } from "../../components/Components/Styles/styles.js";
-import { DisplayCards } from "../../components/Components/Styles/styles.js";
-import { CardConteiner } from "../../components/Components/Styles/styles.js";
+import {
+  AlinhamentoCards,
+  Background,
+  CardConteiner,
+  DisplayCards
+} from "../../components/Cards/styles.js";
+import { Button } from "../../components/Button/styles.js";
 
 import { AnimeInfo } from "./styles";
-import { Button } from "../../components/Components/Styles/styles.js";
 import { CardDetails } from "./styles";
 import { DetailsConteiner } from "./styles";
+import { criaElementos } from "../../components/Cards/criaElementos.js";
+import CardVertical from "../../components/Cards/CardVertical/CardVertical.jsx";
+
 export default function AnimeCard() {
+  const dados = [
+      {
+        coment: '11',
+        view: '9141',
+        img: '/assets/anime/details-pic.jpg'
+      }
+  ]
   return (
           <DetailsConteiner>
-            <CardDetails>
-            <Background className="background"
-            style = {{ backgroundImage: `url(/assets/anime/details-pic.jpg)`}}>
-              <AlinhamentoCards className="alinhamento">
-              <DisplayCards className="display">
-                <CardConteiner>
-                    <div className="backgroundCard">
-                        <span className='icon'>C</span>
-                        <span>11</span>
-                    </div>
-                </CardConteiner>
-          
-                <CardConteiner>
-                  <div className="backgroundCard">
-                      <span className="icon">V</span>
-                      <span>9141</span>
-                  </div>
-                </CardConteiner>
-              </DisplayCards>
-            </AlinhamentoCards>
-              </Background>
-            </CardDetails>
+      <CardDetails>
+        {criaElementos(dados, CardVertical)}
+      </CardDetails>
           
             <AnimeInfo className="anime">
               <header>

@@ -3,9 +3,16 @@ import { SignUpConteiner, SignUpForm } from './styles'
 import {
   InputConteiner,
   Input,
+  FormHeader
+} from "../../components/Form/styles";
+
+import {  
   ButtonLogin,
-  ButtonFace, ButtonGoogle, ButtonTwitter, FormHeader
-} from "../../components/Components/Styles/styles";
+  ButtonFace,
+  ButtonGoogle,
+  ButtonTwitter,
+} from "../../components/Button/styles.js";
+
 export default function Sign() {
   return (
         <SignUpConteiner>
