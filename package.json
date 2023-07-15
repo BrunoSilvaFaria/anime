@@ -1,7 +1,8 @@
 {
   "name": "anime",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://brunosilvafaria.github.io/anime/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -40,7 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://brunosilvafaria.github.io/anime/",
   "devDependencies": {
     "@babel/generator": "^7.22.5",
     "@storybook/addon-essentials": "^7.0.24",
