@@ -12,7 +12,7 @@ export default function Header() {
               <Link to='/'>Homepage</Link>
             </li>
             <li>
-              <Link to='/animeDetails'>Categories ^</Link>
+              <Link to='/animeCategorie'>Categories ^</Link>
             </li>
             <li>
               <Link to='/blog'>Our bloc</Link>
