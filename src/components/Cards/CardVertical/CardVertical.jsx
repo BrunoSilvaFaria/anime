@@ -17,6 +17,7 @@ export default function CardVertical(props) {
   const episode = props.item.episodes;
   const label = props.item.label;
   const title = props.item.title;
+  
   return (
     <Card>
         <article>

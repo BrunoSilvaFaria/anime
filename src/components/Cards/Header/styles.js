@@ -41,6 +41,20 @@ export const HeaderMedium = styled(Header)`
         .link-active{
             color: #fff; 
     }
+    `
+export const HeaderChoses = styled(HeaderMedium)`
+    .select{
+        ${DisplayFlex};
+        align-items: center;
+        label{
+            margin: auto 20px;
+        }
+        select{
+            background: #fff;
+            color: black;
+            padding: 5px;
+        }
+    }
 `
 export const HeaderLarge = styled(Header)`
     width: 100%;
