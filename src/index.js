@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 import Home from './pages/Home/Home';
+import AnimeCategorie from './pages/AnimeCategorie/AnimeCategorie';
 import AnimeDetails from './pages/AnimeDetails/AnimeDetails';
 import AnimeEpisodes from './pages/AnimeEpisodes/AnimeEpisodes';
 import AnimeWatch from './pages/AnimeWatch/AnimeWatch';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       { 
         path: "/",
         element: <Home />,
+      },
+      { 
+        path: "animeCategorie",
+        element: <AnimeCategorie />,
       },
       { 
         path: "animeDetails",
