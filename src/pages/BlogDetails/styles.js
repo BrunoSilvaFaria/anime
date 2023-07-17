@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex } from "../../components/Components/Styles/styles";
+import { DisplayFlex } from "../../components/styles";
 import {
     FormInputs,
     TextArea

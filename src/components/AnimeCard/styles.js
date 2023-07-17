@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Card } from "../Cards/CardVertical/styles";
-import { DisplayFlex } from "../Components/Styles/styles";
+import { DisplayFlex } from "../styles";
 
 export const CardDetails = styled(Card)`
     &, article{

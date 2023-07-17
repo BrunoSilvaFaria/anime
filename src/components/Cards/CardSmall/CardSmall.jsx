@@ -2,7 +2,7 @@ import { CardSmall } from "./styles";
 import { Link } from "react-router-dom";
 import {
   TitleAnime
-} from '../../Components/Styles/styles';
+} from '../../styles';
 
 import {
   Background,

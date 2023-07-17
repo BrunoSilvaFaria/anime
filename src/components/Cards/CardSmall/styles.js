@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex } from "../../Components/Styles/styles";
+import { DisplayFlex } from "../../styles";
 
 export const ConteinerSmall = styled.section`
     @media (max-width: 450px) {

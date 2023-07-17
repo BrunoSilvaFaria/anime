@@ -1,5 +1,5 @@
 import { styled, css } from "styled-components";
-import { DisplayFlex } from "../Components/Styles/styles"; 
+import { DisplayFlex } from "../styles"; 
 
 // === Input / Form ===
 export const FormInputs = css`

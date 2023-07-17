@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { DisplayFlex } from "../Components/Styles/styles";
+import { DisplayFlex } from "../styles";
 
 // === Cards ===
 export const LabelConteiner = styled.div`

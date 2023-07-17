@@ -4,7 +4,7 @@ import { Card } from "./styles";
 
 import {
   TitleAnime
-} from '../../Components/Styles/styles';
+} from '../../styles';
 
 import {
   AlinhamentoCards,

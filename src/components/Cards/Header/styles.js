@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { Links } from "../../Button/styles";
-import { DisplayFlex } from "../../Components/Styles/styles";
+import { DisplayFlex } from "../../styles";
 // === Headers ===
 export const Header = styled.header`
     ${DisplayFlex};

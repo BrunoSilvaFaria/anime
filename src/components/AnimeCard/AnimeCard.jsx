@@ -1,11 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  AlinhamentoCards,
-  Background,
-  CardConteiner,
-  DisplayCards
-} from "../Cards/styles.js";
 import { Button } from "../Button/styles.js";
 
 import { AnimeInfo } from "./styles.js";

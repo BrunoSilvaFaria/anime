@@ -1,5 +1,5 @@
 import { styled,css } from "styled-components";
-import { DisplayFlex } from "../../components/Components/Styles/styles";
+import { DisplayFlex } from "../../components/styles";
 
 export const BlogConteiner = styled.section`
     width: 95%;
