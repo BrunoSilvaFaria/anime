@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeaderTitle} from "./styles";
-import { HeaderLarge} from "./styles";
+import { HeaderLarge } from "./styles";
+import { IconArrowRight } from '../../../Icons';
 export default function HeaderVertical(props) {
     return (
         <div>
@@ -8,7 +9,7 @@ export default function HeaderVertical(props) {
                 <HeaderTitle>{props.title}</HeaderTitle>
                 <div>
                     <a href="#">View All</a>
-                    <span>--</span>
+                    <IconArrowRight/>
                 </div>
             </HeaderLarge>
         </div>
