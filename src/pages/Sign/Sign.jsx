@@ -13,21 +13,30 @@ import {
   ButtonTwitter,
 } from "../../components/Button/styles.js";
 
+import {
+  IconFacebook,
+  IconGoogle,
+  IconTwitter,
+  IconUser,
+  IconLock,
+  IconEnvelope
+} from "../../Icons";
+
 export default function Sign() {
   return (
         <SignUpConteiner>
         <SignUpForm action="">
           <FormHeader>Sign up</FormHeader>
           <InputConteiner>
-            <span>M</span>
+            <IconEnvelope/>
             <Input type="email" placeholder="Email address"></Input>
           </InputConteiner>
           <InputConteiner>
-            <span>M</span>
+            <IconUser/>
             <Input type="text" placeholder="Your Name"></Input>
           </InputConteiner>
           <InputConteiner>
-            <span>M</span>
+            <IconLock/>
             <Input type="password" placeholder="Password"></Input>
           </InputConteiner>
           <ButtonLogin type="submit">Login Now</ButtonLogin>
@@ -36,15 +45,15 @@ export default function Sign() {
         <section>
           <FormHeader>Login With:</FormHeader>
           <ButtonFace>
-            <span>F</span>
+            <IconFacebook/>
             <p>Sign in With Facebook</p>
           </ButtonFace>
           <ButtonGoogle>
-            <span>F</span>
+            <IconGoogle/>
             <p>Sign in With Google</p>
           </ButtonGoogle>
           <ButtonTwitter>
-            <span>F</span>
+            <IconTwitter/>
             <p>Sign in With Twitter</p>
           </ButtonTwitter>
         </section>

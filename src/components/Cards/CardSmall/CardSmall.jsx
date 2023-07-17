@@ -1,5 +1,6 @@
 import { CardSmall } from "./styles";
 import { Link } from "react-router-dom";
+import { IconEye } from "../../../Icons";
 import {
   TitleAnime
 } from '../../styles';
@@ -27,7 +28,7 @@ export default function Header(props) {
               <TitleAnime className="title">{props.item.title}</TitleAnime>
             </Link>
             <div className="view">
-              <span>V</span>
+              <IconEye className='icon'/>
               <span>{props.item.view}</span>
               <span>Viewes</span>
             </div>

@@ -15,12 +15,22 @@ import {
   CommentReply,
   CommentForm
 } from './styles'
+
 import {
   LinkFace,
   LinkPinterest,
   LinkLinkedlin,
   LinkTwitter
 } from "../../components/Button/styles";
+
+import {
+  IconArrowLeft,
+  IconArrowRight,
+  IconFacebookFill,
+  IconPinterest,
+  IconLinkedinFill,
+  IconTwitterSquareFill
+} from "../../Icons";
 export default function BlogDetails() {
   return (
     <BlogConteiner>
@@ -33,25 +43,25 @@ export default function BlogDetails() {
           <SocialLinks>
             <li>
             <LinkFace>
-              <span>F</span>
+              <IconFacebookFill/>
               <span>Facebook</span>
             </LinkFace>
             </li>
             <li>
               <LinkPinterest>
-                <span>F</span>
+                <IconPinterest/>
                 <span>Pinterest</span>
               </LinkPinterest>
             </li>
             <li>
               <LinkLinkedlin>
-                <span>F</span>
+                <IconLinkedinFill/>
                 <span>Linkedlin</span>
               </LinkLinkedlin>
             </li>
             <li>
               <LinkTwitter>
-                <span>F</span>
+                <IconTwitterSquareFill/>
                 <span>Twitter</span>
               </LinkTwitter>
             </li>
@@ -92,8 +102,8 @@ export default function BlogDetails() {
       </main>
 
       <AnchorPost>
-        <a href=""> -- Building a Better LiA...</a>
-        <a href=""> Mugen no Juunin: Immortal – 21 --</a>
+        <a href=""> <IconArrowLeft/> Building a Better LiA...</a>
+        <a href=""> Mugen no Juunin: Immortal – 21 <IconArrowRight/></a>
       </AnchorPost>
         
       <Comments>

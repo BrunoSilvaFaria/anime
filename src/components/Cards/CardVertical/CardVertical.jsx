@@ -12,6 +12,8 @@ import {
   LabelConteiner
 } from '../styles';
 
+import { IconEye, IconComments } from '../../../Icons';
+
 import { Link } from 'react-router-dom';
 export default function CardVertical(props) {
   const episode = props.item.episodes;
@@ -37,14 +39,14 @@ export default function CardVertical(props) {
             <DisplayCards className="display">
               <CardConteiner>
                   <div className="backgroundCard">
-                      <span className='icon'>C</span>
+                      <IconEye className='icon'/>
                       <span>{props.item.coment}</span>
                   </div>
               </CardConteiner>
                 
               <CardConteiner>
                 <div className="backgroundCard">
-                    <span className="icon">V</span>
+                    <IconComments className='icon'/>
                     <span>{props.item.view}</span>
                 </div>
               </CardConteiner>

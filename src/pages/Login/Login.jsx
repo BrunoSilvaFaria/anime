@@ -14,6 +14,15 @@ import {
   ButtonRegister,
   ButtonTwitter,
 } from "../../components/Button/styles.js";
+import {
+  IconFacebook,
+  IconGoogle,
+  IconTwitter,
+  IconUser,
+  IconLock,
+  IconEnvelope
+} from "../../Icons";
+
 export default function Login() {
   return (
       <LoginMain>
@@ -21,12 +30,12 @@ export default function Login() {
           <SignUpForm action="">
             <FormHeader>Login</FormHeader>
             <InputConteiner className="inputConteiner">
-              <span>M</span>
+              <IconEnvelope/>
               <Input type="email" placeholder="Email address"></Input>
             </InputConteiner>
           
             <InputConteiner className="inputConteiner">
-              <span>M</span>
+              <IconLock/>
               <Input type="password" placeholder="Password"></Input>
             </InputConteiner>
           
@@ -48,15 +57,15 @@ export default function Login() {
           <FormHeader>Or</FormHeader>
           <div className="social">
             <ButtonFace>
-              <span>F</span>
+              <IconFacebook/>
               <p>Sign in With Facebook</p>
             </ButtonFace>
             <ButtonGoogle>
-              <span>F</span>
+              <IconGoogle/>
               <p>Sign in With Google</p>
             </ButtonGoogle>
             <ButtonTwitter>
-              <span>F</span>
+              <IconTwitter/>
               <p>Sign in With Twitter</p>
             </ButtonTwitter>
           </div>

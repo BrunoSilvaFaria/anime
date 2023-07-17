@@ -16,28 +16,20 @@ import dataView from '../../data/viewData';
 import dataComment from '../../data/commentData';
 
 import { criaElementos } from "../../components/criaElementos";
+import { filtraElementos } from "../../components/filtraElementos";
+import { ordenaElementos } from "../../components/ordenaElementos";
+import  SelecionaElementos  from "../../components/selecionaElementos";
+
+
 import dataCategoria from '../../data/categoriaData';
 import { HomeConteiner } from './styles';
 
 export default function Home() {
-    const [selectedValueTitle, setSelectedValueTitle] = useState('All');
-    const handleSelectTitle = (event) => {
-      setSelectedValueTitle(event.target.value);
-    };
-      
-    const [selectedValueOrder, setSelectedValueOrder] = useState('a');
-    const handleSelectOrder = (event) => {
-      setSelectedValueOrder(event.target.value);
-    };
-    const filteredData = dataCategoria.filter(item => {
-      return item.categories && item.categories.includes(selectedValueTitle);
-    });
-    let sortedData;
-    if (selectedValueOrder === 'a') {
-      sortedData = filteredData.sort((a, b) => a.title.localeCompare(b.title));
-    } else {
-      sortedData = filteredData.sort((a, b) => b.title.localeCompare(a.title));
-    }
+  const handleSelectTitle = SelecionaElementos({ value: 'All' });
+  const handleSelectOrder = SelecionaElementos({ value: 'a' });
+  
+  const filtered = filtraElementos(dataCategoria, handleSelectTitle.selectedValue);
+  const sortedData = ordenaElementos(filtered, handleSelectOrder.selectedValue);
   return (
       <div>
         <div>
@@ -45,9 +37,9 @@ export default function Home() {
           <main>
             <ConteinerVertical>
               <HeaderChose
-                title={selectedValueTitle}
-                functionTitle={handleSelectTitle}
-                functionOrder={handleSelectOrder}
+                title={handleSelectTitle.selectedValue}
+                functionTitle={handleSelectTitle.handleSelect}
+                functionOrder={handleSelectOrder.handleSelect}
               />
                   <div>
                       <div>

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 import { Card } from "./styles";
 
+import { IconEye } from '../../../Icons';
 import {
   TitleAnime
 } from '../../styles';
@@ -30,7 +31,7 @@ export default function CardHorizontal(props) {
                 </CardConteiner>
                   <CardConteiner>
                     <div className="backgroundCard">
-                        <span className='icon'>V</span>
+                  <IconEye className='icon'/>
                         <span>{props.item.view}</span>
                     </div>
                   </CardConteiner>

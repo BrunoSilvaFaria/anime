@@ -1,6 +1,9 @@
 import { HeaderContainer } from "./styles";
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
+
+import { IconUser, IconSearch } from "../../Icons";
+
 export default function Header() {
   return (
     <HeaderContainer>
@@ -23,12 +26,10 @@ export default function Header() {
           </ul>
           <section className="conteiner">
             <button>
-              {/* <img src={search} alt="Icone de busca" className="search" /> */}
-              <p>P</p>
+              <IconSearch/>
             </button>
             <Link to='/login'>
-              {/* <img src={search} alt="Icone de busca" className="login" /> */}
-              <p>L</p>
+              <IconUser/>
             </Link>
           </section>
         </nav>
