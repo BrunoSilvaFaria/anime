@@ -24,39 +24,40 @@ import {
 
 export default function Sign() {
   return (
-        <SignUpConteiner>
-        <SignUpForm action="">
-          <FormHeader>Sign up</FormHeader>
-          <InputConteiner>
-            <IconEnvelope/>
-            <Input type="email" placeholder="Email address"></Input>
-          </InputConteiner>
-          <InputConteiner>
-            <IconUser/>
-            <Input type="text" placeholder="Your Name"></Input>
-          </InputConteiner>
-          <InputConteiner>
-            <IconLock/>
-            <Input type="password" placeholder="Password"></Input>
-          </InputConteiner>
-          <ButtonLogin type="submit">Login Now</ButtonLogin>
-          <p>Already have an account? <a href="#">Log In!</a></p>
-        </SignUpForm>
-        <section>
-          <FormHeader>Login With:</FormHeader>
-          <ButtonFace>
-            <IconFacebook/>
-            <p>Sign in With Facebook</p>
-          </ButtonFace>
-          <ButtonGoogle>
-            <IconGoogle/>
-            <p>Sign in With Google</p>
-          </ButtonGoogle>
-          <ButtonTwitter>
-            <IconTwitter/>
-            <p>Sign in With Twitter</p>
-          </ButtonTwitter>
-        </section>
-      </SignUpConteiner>
+    <h1>titulo</h1>
+      //   <SignUpConteiner>
+      //   <SignUpForm action="">
+      //     <FormHeader>Sign up</FormHeader>
+      //     <InputConteiner>
+      //       <IconEnvelope/>
+      //       <Input type="email" placeholder="Email address"></Input>
+      //     </InputConteiner>
+      //     <InputConteiner>
+      //       <IconUser/>
+      //       <Input type="text" placeholder="Your Name"></Input>
+      //     </InputConteiner>
+      //     <InputConteiner>
+      //       <IconLock/>
+      //       <Input type="password" placeholder="Password"></Input>
+      //     </InputConteiner>
+      //     <ButtonLogin type="submit">Login Now</ButtonLogin>
+      //     <p>Already have an account? <a href="#">Log In!</a></p>
+      //   </SignUpForm>
+      //   <section>
+      //     <FormHeader>Login With:</FormHeader>
+      //     <ButtonFace>
+      //       <IconFacebook/>
+      //       <p>Sign in With Facebook</p>
+      //     </ButtonFace>
+      //     <ButtonGoogle>
+      //       <IconGoogle/>
+      //       <p>Sign in With Google</p>
+      //     </ButtonGoogle>
+      //     <ButtonTwitter>
+      //       <IconTwitter/>
+      //       <p>Sign in With Twitter</p>
+      //     </ButtonTwitter>
+      //   </section>
+      // </SignUpConteiner>
     );
   }
