@@ -24,7 +24,10 @@ import {
     AiOutlineCalendar 
 } from 'react-icons/ai';
 
-import { IoIosArrowUp } from 'react-icons/io';
+import {
+    IoIosArrowUp,
+    IoIosMenu
+} from 'react-icons/io';
 
 export const IconArrowLeft = HiArrowLongLeft;
 export const IconArrowRight = HiArrowLongRight;
@@ -46,3 +49,4 @@ export const IconLinkedinFill = AiFillLinkedin;
 export const IconTwitterSquareFill = AiFillTwitterSquare;
 
 export const IconArrowUp = IoIosArrowUp;
+export const IconMenu = IoIosMenu;
