@@ -1,29 +1,87 @@
+import { useState, useEffect } from "react";
 import { HeaderContainer } from "./styles";
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
 
-import { IconUser, IconSearch } from "../../Icons";
+
+import { IconUser, IconSearch, IconMenu } from "../../Icons";
 
 export default function Header() {
+  const [showElement, setShowElement] = useState(window.innerWidth >= 900);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setShowElement(window.innerWidth >= 990);
+    };
+
+    // Adiciona um listener para o evento de redimensionamento da janela
+    window.addEventListener('resize', handleResize);
+
+    // Remove o listener quando o componente é desmontado
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  
+  const showOrHide = () => {
+    setShowElement((prevShowElement) => !prevShowElement);
+  }
+  const [activeLink, setActiveLink] = useState('/');
+
+  const handleLinkClick = (to) => {
+    setActiveLink(to);
+    if (window.innerWidth < 900) {
+      showOrHide();
+    }
+  };
+ 
+
   return (
     <HeaderContainer>
       <div>
         <nav>
-          <img src={logo} alt="Logo do site" />
-          <ul className="list">
-            <li className="link-active">
-              <Link to='/'>Homepage</Link>
-            </li>
-            <li>
-              <Link to='/animeCategorie'>Categories ^</Link>
-            </li>
-            <li>
-              <Link to='/blog'>Our bloc</Link>
-            </li>
-            <li>
-              <Link href="#">Contact</Link>
-            </li>
-          </ul>
+          <Link to="/"
+            onClick={() => { handleLinkClick('/') }}
+          >
+            <img src={logo} alt="Logo do site" />
+          </Link>
+
+          {showElement && 
+            <ul className="list">
+              <li>
+                <Link
+                  to="/"
+                  className={activeLink === '/' ? 'link-active' : ''}
+                  onClick={() => { handleLinkClick('/')}}
+                >
+                  Homepage
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/animeCategorie"
+                  className={activeLink === '/animeCategorie' ? 'link-active' : ''}
+                  onClick={() => {handleLinkClick('/animeCategorie')}}
+                >
+                  Categories
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className={activeLink === '/blog' ? 'link-active' : ''}
+                  onClick={() => {handleLinkClick('/blog')}}
+                >
+                  Our bloc
+                </Link>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            }
+
           <section className="conteiner">
             <button>
               <IconSearch/>
@@ -31,9 +89,16 @@ export default function Header() {
             <Link to='/login'>
               <IconUser/>
             </Link>
+          <section className="menu" onClick={showOrHide}>
+            <button>
+              <span>Menu</span>
+            <IconMenu className="icon"/>
+            </button>
           </section>
+          </section>
+
         </nav>
       </div>
-      </HeaderContainer>
+    </HeaderContainer>
   );
 }
