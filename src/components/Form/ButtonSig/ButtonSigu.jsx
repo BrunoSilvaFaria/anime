@@ -3,7 +3,7 @@ import { ButtonLogin } from "../../Button/styles";
 import { Conteiner } from "./styles";
 import { Link } from "react-router-dom";
 
-export default function ButtonSig(props) {
+export default function ButtonSigu(props) {
   return (
 <Conteiner>
         <ButtonLogin type="submit">Login now</ButtonLogin>

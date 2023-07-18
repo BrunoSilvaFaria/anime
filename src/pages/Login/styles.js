@@ -5,6 +5,9 @@ export const LoginConteiner = styled.section`
     ${FormConteiner};
     flex-wrap: wrap;
     width: 890px;
+    section{
+        width: 330px;
+    }
     @media (max-width: 990px){
         &{
             display: block;

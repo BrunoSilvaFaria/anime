@@ -34,14 +34,18 @@ export const ButtonRegister = styled.a`
 
 export const ButtonSocial = styled(ButtonLogin)`
     ${ButtonStyle};
-    padding: 10px;
+    padding: 14px 0;
     width: 100%;
     margin: 0 0 15px 0;
     display: flex;
     align-items: center;
-        span{
-        font-size: 20px;
-        margin: 0 40px 0 20px;
+
+    p{
+        margin: auto;
+    }
+    .icon{
+        margin-left: 30px;
+        font-size: 18px;
     }
 `
 export const ButtonFace = styled(ButtonSocial)`

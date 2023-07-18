@@ -3,6 +3,7 @@ import { DisplayFlex } from "../../styles"
 
 export const Conteiner = styled.div`
         width: 90%;
+        max-width: 370px;
         ${DisplayFlex};
         align-items: center;
         height: 40px;

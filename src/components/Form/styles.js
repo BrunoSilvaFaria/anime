@@ -1,13 +1,38 @@
 import { styled, css } from "styled-components";
 import { DisplayFlex } from "../styles"; 
 
-
-// === Input / Form ===
+// === Default ===
 export const FormInputs = css`
     color: #b7b7b7;
     background: #fff;
 `
 
+export const TextArea = css`
+    ${FormInputs};
+    overflow: hidden;
+    resize: none;
+    margin-bottom: 35px;
+    padding: 15px 0 15px 20px;
+    height: 115px;
+    width: 100%;
+    max-width: 610px;
+`
+export const Form = css`
+    width: 435px;
+    @media(max-width: 990px){
+        width: 100%;
+        margin: auto;
+        border: 0;
+    }
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 90px 0 0 65px;
+`
+export const FormConteiner = css`
+    ${DisplayFlex};
+    align-items: baseline;
+    margin: auto;
+`
+// === Input / Form ===
 export const InputConteiner = styled.div`
     ${FormInputs};
     display: flex;
@@ -33,27 +58,7 @@ export const Input = styled.input`
     height: 30px;
 `
 
-export const TextArea = css`
-    ${FormInputs};
-    overflow: hidden;
-    resize: none;
-    margin-bottom: 35px;
-    padding: 15px 0 15px 20px;
-    height: 115px;
-    width: 100%;
-    max-width: 610px;
-`
 
-export const Form = css`
-    width: 435px;
-    @media(max-width: 990px){
-        width: 100%;
-        margin: auto;
-        border: 0;
-    }
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 90px 0 0 65px;
-`
 export const ConteinerInputs = styled.form`
     ${Form};
     height: 335px;
@@ -85,9 +90,7 @@ export const ConteinerInputs = styled.form`
             width: 100%;
         }
 `
-export const FormConteiner = css`
-    ${DisplayFlex};
-    align-items: baseline;
-    margin: auto;
-`
+
+
+
 
