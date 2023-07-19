@@ -1,5 +1,6 @@
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import './global.css';
 
 // 2- Reaproveitando componentes
@@ -12,6 +13,8 @@ function App() {
       <Outlet />
       
       <Footer />
+      
+      <ScrollToTop />
     </>
   )
 }

@@ -12,6 +12,8 @@ import BlogDetails from './pages/BlogDetails/BlogDetails'
 import Blog from './pages/Blog/Blog'
 import Login from './pages/Login/Login';
 import Sign from './pages/Sign/Sign';
+
+import scrollToTop from './components/ScrollToTop';
 // Configurando router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const router = createBrowserRouter([
