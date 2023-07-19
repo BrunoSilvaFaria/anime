@@ -22,6 +22,8 @@ import dataComment from '../../data/commentData';
 import { criaElementos } from "../../components/criaElementos";
 import { HomeConteiner } from './styles';
 
+import CardsHorizontais from "../../components/Cards/CardsHorizontais";
+
 export default function Home() {
   return (
       <div>
@@ -50,10 +52,7 @@ export default function Home() {
 
           <aside className="conteiner__aside">
             <aside>
-              <ConteinerHorizontal>
-                <HeaderHorizontal title="top views"></HeaderHorizontal>
-                <div>{criaElementos(dataView, CardHorizontal)}</div>
-              </ConteinerHorizontal>
+              <CardsHorizontais data={dataView} title='Top views' />
             </aside>
                   <aside>
               <ConteinerSmall>

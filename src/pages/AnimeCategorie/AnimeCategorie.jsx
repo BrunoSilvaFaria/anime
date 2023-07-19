@@ -3,9 +3,7 @@ import React, {useState} from "react";
 import CardVertical from "../../components/Cards/CardVertical/CardVertical";
 import { ConteinerVertical } from "../../components/Cards/CardVertical/styles";
 
-import CardHorizontal from "../../components/Cards/CardHorizontal/CardHorizontal"
-import { ConteinerHorizontal } from "../../components/Cards/CardHorizontal/styles";
-import HeaderHorizontal from "../../components/Cards/Header/HeaderHorizontal";
+import CardsHorizontais from "../../components/Cards/CardsHorizontais";
 
 import CardSmall from "../../components/Cards/CardSmall/CardSmall";
 import { ConteinerSmall } from "../../components/Cards/CardSmall/styles";
@@ -28,7 +26,7 @@ export default function Home() {
   const handleSelectTitle = SelecionaElementos({ value: 'All' });
   const handleSelectOrder = SelecionaElementos({ value: 'a' });
   
-  const filtered = filtraElementos(dataCategoria, handleSelectTitle.selectedValue);
+  const filtered = filtraElementos(dataCategoria, handleSelectTitle.selectedValue, 'categories');
   const sortedData = ordenaElementos(filtered, handleSelectOrder.selectedValue);
   return (
       <div>
@@ -51,10 +49,7 @@ export default function Home() {
 
           <aside className="conteiner__aside">
             <aside>
-              <ConteinerHorizontal>
-                <HeaderHorizontal title="top views"></HeaderHorizontal>
-                <div>{criaElementos(dataView, CardHorizontal)}</div>
-              </ConteinerHorizontal>
+              <CardsHorizontais data={dataView} title='Top views' />
             </aside>
                   <aside>
               <ConteinerSmall>
