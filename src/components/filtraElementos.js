@@ -1,8 +1,8 @@
 import React from "react";
 
-const filtraElementos = (arquivo, selectedValue) => {
+const filtraElementos = (arquivo, selectedValue, campo) => {
   return arquivo.filter(item => {
-    return item.categories && item.categories.includes(selectedValue);
+    return item[campo] && item[campo].includes(selectedValue);
   });
 }
 
