@@ -29,9 +29,9 @@ export default function Header() {
   }
   const [activeLink, setActiveLink] = useState('/');
 
-  const handleLinkClick = (to) => {
+  const handleLinkClick = (to, type='link') => {
     setActiveLink(to);
-    if (window.innerWidth < 900) {
+    if (window.innerWidth < 900 && type != "logo") {
       showOrHide();
     }
   };
@@ -42,7 +42,7 @@ export default function Header() {
       <div>
         <nav>
           <Link to="/"
-            onClick={() => { handleLinkClick('/') }}
+            onClick={() => { handleLinkClick('/', 'logo') }}
           >
             <img src={logo} alt="Logo do site" />
           </Link>
