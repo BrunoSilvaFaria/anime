@@ -31,14 +31,14 @@ export const HeaderMedium = styled(Header)`
     }
     li{
         list-style: none;
-            a{
+        button{
                 font-size: 13px;
                 color: #b7b7b7;
                 margin-right: 7px;
                 cursor: pointer;
             }
         }
-        .link-active{
+        .button-active{
             color: #fff; 
     }
     `
