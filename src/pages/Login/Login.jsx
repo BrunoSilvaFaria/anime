@@ -2,8 +2,8 @@ import { React } from "react";
 import { Link } from "react-router-dom";
 
 import { ButtonRegister } from "../../components/Button/styles.js";
-import { ConteinerInputs } from "../../components/Form/styles";
-import { LoginMain, LoginConteiner } from './styles';
+import { ConteinerInputs, Main } from "../../components/Form/styles";
+import { LoginConteiner } from './styles';
 
 import ButtonLog from "../../components/Form/ButtonLog/ButtonLog";
 import BannerMedium from "../../components/Banner/BannerMedium/BannerMedium.jsx";
@@ -15,7 +15,7 @@ export default function Login() {
   return (
         <div>
       <BannerMedium title="Login" />
-      <LoginMain>
+      <Main>
         <LoginConteiner>
           <ConteinerInputs>
             <HeaderForm title="Login" />
@@ -34,7 +34,7 @@ export default function Login() {
         <SocialConteiner>
           <h3>Or</h3>
           <Social/></SocialConteiner>
-          </LoginMain>
+          </Main>
         </div>
     );
   }
