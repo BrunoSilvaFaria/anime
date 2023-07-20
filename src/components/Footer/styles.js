@@ -5,7 +5,7 @@ export const display = css`
     align-items: center;
 `
 export const FooterConteiner= styled.footer`
-    height: 190px;
+    height: 215px;
     background: #070720;
     font-size: 15px;
     font-weight: 700;
@@ -31,6 +31,7 @@ export const FooterConteiner= styled.footer`
      @media (max-width: 989px) {
          &{
              height: inherit;
+             height: 306px;
          }
          button{
              margin: 0 auto 15px auto;
@@ -46,27 +47,12 @@ export const FooterConteiner= styled.footer`
             display: block;
         }
      }
-    @media (min-width: 990px) {
-        .conteiner{
-            ${display};
-            height: 100px;
-        }
-        .footer{
-            ${display};
-            align-items: flex-start;
-            height: 75px;
-            width: 100%;
-        }
-        p{
-            width: 260px;
-        }   
-    }
 
     .list{
         ${display};
         flex-wrap: wrap;
         width: 90%;
-        max-width: 480px;
+        max-width: 550px;
         li{
             a{
                 color: #D9D9D9;
@@ -86,6 +72,26 @@ export const FooterConteiner= styled.footer`
         a{
             color: #007bff;
         }
+    }
+
+        @media (min-width: 990px) {
+        .conteiner{
+            ${display};
+            height: 115px;
+            width: 90%;
+        }
+        .footer{
+            ${display};
+            align-items: flex-start;
+            height: 75px;
+            width: 100%;
+        }
+        .list{
+            width: 450px;
+        }
+        p{
+            width: 260px;
+        }   
     }
 
 `
