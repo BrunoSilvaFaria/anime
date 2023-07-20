@@ -5,7 +5,13 @@ export const Banner = styled.header`
     background-position: top center;
     width: 100%;
     height: 300px;
-    margin-bottom: 140px;
+    margin-bottom: 90px;
+        
+    @media (max-width: 990px){
+        &{
+            margin-bottom: 90px;
+        }
+    }
     div{
         width: 80%;
         height: 200px;
