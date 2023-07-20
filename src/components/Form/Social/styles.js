@@ -4,7 +4,7 @@ export const SocialConteiner = styled.section`
     width: 380px;
     @media (max-width: 990px){
         &{
-            margin: auto;
+            margin: auto auto 100px auto;
             width: 460px;
         }
     }
@@ -18,7 +18,7 @@ export const SocialConteiner = styled.section`
             width: 100%;
         }
     }
-    margin: 0 auto auto 313px;
+    margin: 0 auto 100px 313px;
     h3{
         font-size: 13px;
         letter-spacing: 2px;

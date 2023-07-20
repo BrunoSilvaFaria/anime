@@ -32,6 +32,45 @@ export const FormConteiner = css`
     align-items: baseline;
     margin: auto;
 `
+export const Main = styled.section`
+    margin: auto;
+    margin-bottom: 120px;
+    width: 890px;
+    
+    @media (max-width: 990px){
+        &{
+            width: 95%;
+        }
+    }
+    @media (max-width: 450px){
+        &{
+            width: 90%;
+        }
+    }
+` 
+export const Conteiner = styled.section`
+    ${FormConteiner};
+    flex-wrap: wrap;
+    @media (max-width: 990px){
+        &{
+            display: block;
+            margin: auto;
+            width: 690px;
+        }
+    }
+    
+    @media (max-width: 765px){
+        &{
+            width: 510px;
+        }
+    }
+    
+    @media (max-width: 575px){
+        &{
+            width: 100%;
+        }
+    }
+`  
 // === Input / Form ===
 export const InputConteiner = styled.div`
     ${FormInputs};
@@ -62,33 +101,20 @@ export const Input = styled.input`
 export const ConteinerInputs = styled.form`
     ${Form};
     height: 335px;
+    margin: auto;
     p{
         font-size: 15px;
     }
     a{
         font-weight: 700;;
     }
-
-    @media (max-width: 990px){
-        .inputConteiner{
-            width: 690px;
-        }
-    }
-
-    @media (max-width: 765px){
-        .inputConteiner{
-            width: 510px;
-        }
-    }
     
-    @media (max-width: 575px){
-        .inputConteiner{
+    @media (max-width: 990px){
+        .inputConteiner, &{
             width: 100%;
         }
-        }
-        input{
-            width: 100%;
-        }
+    }
+
 `
 
 
