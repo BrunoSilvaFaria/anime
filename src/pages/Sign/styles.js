@@ -1,14 +1,12 @@
 import styled from "styled-components";
-import { FormConteiner } from "../../components/Form/styles";
+import { Conteiner } from "../../components/Form/styles";
 
-export const SignUpConteiner = styled.section`
-    ${FormConteiner};
-    width: 940px;
-    margin-bottom: 100px;
+export const SignUpConteiner = styled(Conteiner)`
+    max-width: 940px;
     form{
         height: 450px;
     }
     section{
-        margin: 0;
+        margin: 0 0 100px 0;
     }
 `  
