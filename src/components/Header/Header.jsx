@@ -23,15 +23,14 @@ export default function Header() {
     };
   }, []);
 
-  
+  // setShowElement('false');
   const showOrHide = () => {
     setShowElement((prevShowElement) => !prevShowElement);
   }
   const [activeLink, setActiveLink] = useState('/');
-
   const handleLinkClick = (to, type='link') => {
     setActiveLink(to);
-    if (window.innerWidth < 900 && type != "logo") {
+    if (window.innerWidth < 900 && type !== "logo") {
       showOrHide();
     }
   };
