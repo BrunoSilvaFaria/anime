@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { DisplayFlex } from "../styles";
+import { DisplayFlex, DisplayIcon } from "../styles";
 
 // === Cards ===
 export const LabelConteiner = styled.div`
@@ -16,6 +16,7 @@ export const LabelConteiner = styled.div`
 export const CardConteiner = styled.div`
     font-size: 13px;
     .backgroundCard{
+        ${DisplayIcon};
         background: #3d3d3d;
         padding: 6px 13px;
         border-radius: 4px;

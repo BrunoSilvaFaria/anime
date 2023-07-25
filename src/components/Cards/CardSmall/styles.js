@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex } from "../../styles";
+import { DisplayFlex, DisplayIcon } from "../../styles";
 
 export const ConteinerSmall = styled.section`
     @media (max-width: 450px) {
@@ -28,10 +28,11 @@ export const CardSmall = styled.section`
                 margin-bottom: 0;
             }
             .view {
+                ${DisplayIcon}
                     span{
                         color: #b7b7b7;
                         font-size: 13px;
-                        margin-right: 3px;
+                        margin: 0 3px;
                     }
                 }
             .title{

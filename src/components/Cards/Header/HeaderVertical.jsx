@@ -8,8 +8,9 @@ export default function HeaderVertical(props) {
             <HeaderLarge>
                 <HeaderTitle>{props.title}</HeaderTitle>
                 <div>
-                    <a href="#">View All</a>
-                    <IconArrowRight/>
+                    <a href="#">View All
+                    <IconArrowRight className='icon'/>
+                    </a>
                 </div>
             </HeaderLarge>
         </div>

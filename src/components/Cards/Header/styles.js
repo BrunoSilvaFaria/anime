@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { Links } from "../../Button/styles";
-import { DisplayFlex } from "../../styles";
+import { DisplayFlex, DisplayIcon } from "../../styles";
 // === Headers ===
 export const Header = styled.header`
     ${DisplayFlex};
@@ -59,12 +59,12 @@ export const HeaderChoses = styled(HeaderMedium)`
 export const HeaderLarge = styled(Header)`
     width: 100%;
     div{
-        display: block;
         a{
+            ${DisplayIcon}
             font-size: 13px;
             ${Links};
         }
-        span{
+        .icon{
             font-size: 18px;
             margin-left: 5px;
         }

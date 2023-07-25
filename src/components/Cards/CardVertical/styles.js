@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { DisplayFlex } from "../../styles";
 
-export  const ConteinerVertical = styled.section`
+export const ConteinerVertical = styled.section`
     margin: 70px auto;
-    @media (max-width: 450px) {
+    @media (max-width: 550px) {
         width: 100%;
     }
     @media (min-width: 550px) and (max-width: 750px) {
