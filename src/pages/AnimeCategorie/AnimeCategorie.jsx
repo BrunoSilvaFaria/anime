@@ -29,9 +29,9 @@ export default function Home() {
   const filtered = filtraElementos(dataCategoria, handleSelectTitle.selectedValue, 'categories');
   const sortedData = ordenaElementos(filtered, handleSelectOrder.selectedValue);
   return (
+    <div>
       <div>
-        <div>
-              <HomeConteiner>
+        <HomeConteiner>
           <main>
             <ConteinerVertical>
               <HeaderChose
@@ -39,28 +39,27 @@ export default function Home() {
                 functionTitle={handleSelectTitle.handleSelect}
                 functionOrder={handleSelectOrder.handleSelect}
               />
-                  <div>
-                      <div>
-                        {criaElementos(sortedData, CardVertical)}
-                      </div>
-                  </div>
+              <div>
+                <div className="conteiner">
+                  {criaElementos(sortedData, CardVertical)}
+                </div>
+              </div>
             </ConteinerVertical>
           </main>
 
           <aside className="conteiner__aside">
             <aside>
-              <CardsHorizontais data={dataView} title='Top views' />
+              <CardsHorizontais data={dataView} title="Top views" />
             </aside>
-                  <aside>
+            <aside>
               <ConteinerSmall>
                 <HeaderSmall title="new comment"></HeaderSmall>
                 <div>{criaElementos(dataComment, CardSmall)}</div>
               </ConteinerSmall>
             </aside>
           </aside>
-              </HomeConteiner>
-            </div>
+        </HomeConteiner>
+      </div>
     </div>
-    
-    );
+  );
   }

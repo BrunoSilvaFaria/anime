@@ -2,20 +2,27 @@ import styled from "styled-components";
 import { DisplayFlex } from "../../styles";
 
 export const ConteinerVertical = styled.section`
-    margin: 70px auto;
-    @media (max-width: 550px) {
-        width: 100%;
+  margin: 70px auto;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+  @media (min-width: 550px) and (max-width: 750px) {
+    width: 510px;
+    margin: auto;
+  }
+  width: 750px;
+  div {
+    ${DisplayFlex};
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1000px) {
+    .conteiner {
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 30px;
     }
-    @media (min-width: 550px) and (max-width: 750px) {
-        width: 510px;
-        margin: auto;
-    }
-    width: 750px;
-    div{
-        ${DisplayFlex};
-        flex-wrap: wrap;
-    }
-`
+  }
+`;
 
 export const Card = styled.article`
     @media (max-width: 1000px) {
