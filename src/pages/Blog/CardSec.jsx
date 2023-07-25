@@ -10,7 +10,7 @@ export default function CardSec(props) {
                     <div className="background--black">
                       <div className="alinhamento">
                         <div className="data">
-                          <IconCalendar/>
+                          <IconCalendar className="icon"/>
                          <span>{props.item.data}</span>
                          </div>
                         <Link className="link" to='/blogDetails'>{props.item.title}</Link>

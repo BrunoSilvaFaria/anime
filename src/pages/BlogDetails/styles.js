@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DisplayFlex } from "../../components/styles";
+import { DisplayFlex, DisplayIcon } from "../../components/styles";
 import {
     FormInputs,
     TextArea
@@ -25,8 +25,11 @@ export const SocialLinks = styled(UlDisplay)`
     border-bottom: 0;
     margin-top: 30px;
     a{
-        span:first-child{
-                margin-right: 10px;
+        ${DisplayIcon};
+    }
+    a{
+        span{
+                margin-left: 5px;
             }
         }
     @media (min-width: 770px){

@@ -1,5 +1,5 @@
 import { styled,css } from "styled-components";
-import { DisplayFlex } from "../../components/styles";
+import { DisplayFlex, DisplayIcon } from "../../components/styles";
 
 export const BlogConteiner = styled.section`
     width: 95%;
@@ -57,19 +57,28 @@ export const Card = styled.article`
         text-align: center;
     }
 
-    .data span{
+    .data{
+        ${DisplayIcon};
         margin-bottom: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+    .data span{
+        margin-left: 5px;
         font-size: 15px;
         line-height: 25px;
     }
-        .data span:first-child{
-            margin-right: 5px;
+        .icon{
+            font-size: 18px;
         }
-
+        .icon path{
+            color: #e53637;
+            font-size: 20px;
+        }
         .link{
             font-size: 20px;
-            line-height: 30px; 
-        }        
+            line-height: 30px;
+        }
 `
 export const Backgrounds = css`
     &{
